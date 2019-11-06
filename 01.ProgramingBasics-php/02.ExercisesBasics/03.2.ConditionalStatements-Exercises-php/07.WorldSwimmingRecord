@@ -1,0 +1,25 @@
+<?php
+
+$record = floatval(readline());
+$distanceInMeters = floatval(readline());
+$secondsForMeter = floatval(readline());
+
+$timeIvan = $distanceInMeters * $secondsForMeter;
+$resistance = floor($distanceInMeters / 15) * 12.5;
+$timeIvan = $timeIvan + $resistance;
+
+if ($timeIvan < $record)
+{
+    printf("Yes, he succeeded! The new world record is %0.2f seconds." ,$timeIvan);
+}
+else
+{
+    printf("No, he failed! He was %0.2f seconds slower." , abs($timeIvan - $record));
+}
+
+
+
+
+
+
+

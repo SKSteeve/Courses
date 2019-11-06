@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 1em;
+}
+
+li a{
+    color: black;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 100%;
+    padding: 1em;
+    background-color: #CCC;
+}
+
+i {
+    font-size: 2em;
+}
+
+.fb a i:hover { color: blue; }
+.twitter a i:hover { color: lightseagreen; }
+.google a i:hover { color: rgb(223, 82, 82); }
+.in a i:hover { color: rgb(54, 54, 153); }
+.insta a i:hover { color: rgb(59, 105, 134); }

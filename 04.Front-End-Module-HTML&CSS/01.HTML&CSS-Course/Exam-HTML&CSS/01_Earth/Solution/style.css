@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, button, input, option, select, form {
+    font: inherit;
+}
+
+p, ul, ol {
+    padding-bottom: 1em;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+header {
+    flex: 0 0 100%;
+    padding: 1em 0.5em 0.5em 0.5em;
+    background-color: rgb(23, 23, 54);
+    margin-bottom: 2em;
+}
+
+header h1 {
+    color: lightseagreen;
+}
+
+header h3 {
+    color: white;
+}
+
+main {
+    margin-bottom: 5em;
+}
+
+main .container-aside1 {
+    border: 1px solid black;
+    display: inline-block;
+    width: 40%;
+    margin: 0.5em 1em;
+    padding: 0.5em 2em 0 2em;
+}
+
+.media-box {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    
+}
+
+.media-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container aside {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin-top: 2em;
+}
+
+footer h2 {
+    background-color: rgb(23, 23, 54);
+    display: inline-block;
+    padding: 0 0.5em;
+    color: white;
+}
+
+.footer-content {
+    padding: 1em;
+    background-color: rgb(192, 199, 209);
+}
+
+.footer-content p {
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+}

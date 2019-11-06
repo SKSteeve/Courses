@@ -1,0 +1,49 @@
+<?php
+
+$groupBudget = floatval(readline());
+$season = readline();
+$group = floatval(readline());
+$sum = 0;
+if ($season == "Sprint")
+{
+    $sum = 3000;
+}
+else if ($season == "Summer" || $season == "Autumn")
+{
+    $sum = 4200;
+}
+else
+{
+    $sum = 2600;
+}
+
+
+if ($group <= 6)
+{
+    $sum *= 0.90;
+}
+else if ($group >= 7 && $group <= 11)
+{
+    $sum *= 0.85;
+}
+else
+{
+    $sum *= 0.75;
+}
+
+
+if ($season != "Autumn" && $group % 2 == 0)
+{
+    $sum *= 0.95;
+}
+
+
+if ($groupBudget >= $sum)
+{
+    printf("Yes! You have %0.2f leva left." , ($groupBudget - $sum));
+}
+else
+{
+    printf("Not enough money! You need %0.2f leva.", ($sum - $groupBudget));
+}
+

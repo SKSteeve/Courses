@@ -1,0 +1,6 @@
+<?php
+
+$usd = floatval(readline());
+$converted = $usd * 1.79549;
+
+echo sprintf('%0.2f' ,$converted);

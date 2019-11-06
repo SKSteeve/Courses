@@ -1,0 +1,41 @@
+<?php
+
+$num1 = intval(readline());
+$num2 = intval(readline());
+
+for($currNum = $num1; $currNum <= $num2; $currNum++)
+{
+    $checking = (string)$currNum;
+    $leftSum = 0;
+    $rightSum = 0;
+    for($left = 0; $left <= 1; $left++)
+    {
+        $leftSum += intval($checking[$left]);
+    }
+    for($right = 4; $right >= 3; $right--)
+    {
+        $rightSum += intval($checking[$right]);   
+    }
+    
+    if($leftSum == $rightSum)
+    {
+        echo $currNum . " ";
+    }
+    else
+    {
+        if($leftSum < $rightSum)
+        {
+            $leftSum += intval($checking[2]);
+        }
+        else
+        {
+            $rightSum += intval($checking[2]);
+        }
+        if($leftSum == $rightSum)
+        {
+            echo $currNum . " ";
+        }
+    }
+    
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../08.Arrays-Exercises-php/.idea/08.Arrays-Exercises-php.iml" filepath="$PROJECT_DIR$/../08.Arrays-Exercises-php/.idea/08.Arrays-Exercises-php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/10.Functions-and-Forms-Lab-php.iml" filepath="$PROJECT_DIR$/.idea/10.Functions-and-Forms-Lab-php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../11.Functions-and-Forms-Exercise-php/.idea/11.Functions-and-Forms-Exercise-php.iml" filepath="$PROJECT_DIR$/../11.Functions-and-Forms-Exercise-php/.idea/11.Functions-and-Forms-Exercise-php.iml" />
+    </modules>
+  </component>
+</project>

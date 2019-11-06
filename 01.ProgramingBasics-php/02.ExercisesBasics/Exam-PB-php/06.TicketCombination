@@ -1,0 +1,30 @@
+<?php
+
+$num = intval(readline());
+$count = 0;
+for($d1 = ord('B'); $d1 <= ord('L'); $d1++)
+{
+    for($d2 = ord('f'); $d2 >= ord('a'); $d2--)
+    {
+        for($d3 = ord('A'); $d3 <= ord('C'); $d3++)
+        {
+            for($d4 = 1; $d4 <= 10; $d4++)
+            {
+                for($d5 = 10; $d5 >= 1; $d5--)
+                {
+                    if($d1 % 2 == 0)
+                    {
+                        $count++;
+                    }
+                    if($count == $num)
+                    {
+                        $prize = $d1 + $d2 + $d3 + $d4 + $d5;
+                        echo "Ticket combination: " . chr($d1) . chr($d2) . chr($d3) . $d4 . $d5 . PHP_EOL;
+                        echo "Prize: " . $prize . " lv.";
+                        return;
+                    }
+                }
+            }
+        }
+    }
+}

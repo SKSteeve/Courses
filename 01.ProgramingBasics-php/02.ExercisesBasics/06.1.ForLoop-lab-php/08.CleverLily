@@ -1,0 +1,44 @@
+<?php
+
+$liliAge = intval(readline());
+$washMachinePrice = floatval(readline());
+$pricePerToy = intval(readline());
+
+$numToys = 0;
+$moneyFromToys = 0;
+
+$money = 0;
+$diff = 0;
+
+$counter = 0;
+$counterBirthdays = 0;
+
+for($i = 0; $i < $liliAge; $i++)
+{
+    $counter++;
+    if($counter % 2 != 0)
+    {
+        $numToys++;
+    }
+    else//if($counter % 2 == 0)
+    {
+        $giftBump = 0;
+        $counterBirthdays++;
+        $giftBump = 10 * $counterBirthdays - 1;
+        $money += $giftBump;
+    }
+}
+
+$moneyFromToys = $numToys * $pricePerToy;
+$money = $money + $moneyFromToys;
+
+if($money >= $washMachinePrice)
+{
+    $diff = $money - $washMachinePrice;
+    echo "Yes! " . number_format($diff , 2 , '.' , '');
+}
+else
+{
+    $diff = $washMachinePrice - $money;
+    echo "No! " . number_format($diff , 2 , '.' , '');
+}

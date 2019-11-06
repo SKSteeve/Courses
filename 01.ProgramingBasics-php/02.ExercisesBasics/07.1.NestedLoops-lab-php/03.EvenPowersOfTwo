@@ -1,0 +1,11 @@
+<?php
+
+$n = intval(readline());
+$curr = 1;
+
+for($i = 0;$i <= $n;$i = $i + 2)
+{
+    echo $curr . PHP_EOL;
+    $curr = $curr * 4;
+}
+

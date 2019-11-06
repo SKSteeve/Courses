@@ -1,0 +1,28 @@
+<?php
+
+$n1 = intval(readline());
+$n2 = intval(readline());
+
+
+for($j = $n1; $j <= $n2; $j++)
+{   
+    $n = (string)$j;
+    $sumOdd = 0;
+    $sumEven = 0;
+    for($i = 0; $i < strlen($n); $i++)
+    {
+        $currDigit = $n[$i];
+        if($i % 2 == 0)
+        {
+            $sumEven += $currDigit;
+        }
+        else
+        {
+            $sumOdd += $currDigit;
+        }
+    }
+    if($sumOdd == $sumEven)
+    {
+        echo $j . " ";
+    }
+}

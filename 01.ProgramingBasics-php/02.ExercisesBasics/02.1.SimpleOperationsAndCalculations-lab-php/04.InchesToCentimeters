@@ -1,0 +1,5 @@
+<?php
+
+$inchs = (float)readline();
+$centimeters = $inchs * 2.54;
+echo "$centimeters";

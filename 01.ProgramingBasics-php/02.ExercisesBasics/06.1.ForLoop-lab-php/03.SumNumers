@@ -1,0 +1,13 @@
+<?php
+
+$num = intval(readline());
+$sum = 0;
+for($n = 0; $n < $num; $n++)
+{
+    $new = intval(readline());
+    $sum = $sum + $new;
+    
+}
+echo $sum . PHP_EOL;
+
+

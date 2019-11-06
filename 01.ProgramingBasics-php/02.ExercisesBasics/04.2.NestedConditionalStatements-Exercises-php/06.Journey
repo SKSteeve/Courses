@@ -1,0 +1,48 @@
+<?php
+
+$budget = floatval(readline());
+$season = readline();
+$destination = '';
+$place = '';
+$hisBudget = 0;
+if ($budget <= 100 )
+{
+    $destination = 'Bulgaria';
+    if ($season == 'summer')
+    {
+        $place = 'Camp';
+        $hisBudget = $budget * 0.3;
+    }
+    else
+    {
+        $place = 'Hotel';
+        $hisBudget = $budget * 0.7;
+    }
+
+}
+else if ($budget <= 1000)
+{
+    $destination = 'Balkans';
+    if ($season == 'summer')
+    {
+        $place = 'Camp';
+        $hisBudget = $budget * 0.4;
+    }
+    else
+    {
+        $place = 'Hotel';
+        $hisBudget = $budget * 0.8;
+    }
+}
+else
+{
+    $destination = 'Europe';
+    $place = 'Hotel';
+    $hisBudget = $budget * 0.9;
+}
+
+echo "Somewhere in " . $destination . PHP_EOL;
+printf("$place - %.2f" ,$hisBudget);
+
+
+

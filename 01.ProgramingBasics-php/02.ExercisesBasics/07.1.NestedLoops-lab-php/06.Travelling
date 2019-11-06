@@ -1,0 +1,15 @@
+<?php
+
+$destination = readline();
+
+while($destination != "End")
+{
+    $minBudget = floatval(readline());
+    $savedMoney = 0;
+    while($savedMoney < $minBudget)
+    {
+        $savedMoney = $savedMoney + floatval(readline());
+    }
+    echo "Going to $destination!" . PHP_EOL;
+    $destination = readline();
+}

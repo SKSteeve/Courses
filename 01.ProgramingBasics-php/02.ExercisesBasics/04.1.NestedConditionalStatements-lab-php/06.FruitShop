@@ -1,0 +1,111 @@
+<?php
+
+$fruit = readline();
+$day = readline();
+$quantity = floatval(readline());
+
+$price = 0;
+
+if ($day == "Monday" || $day == "Tuesday" || $day == "Wednesday" || $day == "Thursday" || $day == "Friday")
+{
+    $banana = 2.50;
+    $apple = 1.20;
+    $orange = 0.85;
+    $grapefruit = 1.45;
+    $kiwi = 2.70;
+    $pineapple = 5.50;
+    $grapes = 3.85;
+    
+    switch ($fruit)
+    {
+        case "banana":
+            $price = $quantity * $banana;
+            echo number_format($price , 2); 
+            break;
+        case "apple";
+            $price = $quantity * $apple;
+            echo number_format($price , 2);
+            break;
+        case "orange":
+            $price = $quantity * $orange;
+            echo number_format($price , 2);
+            break;
+        case "grapefruit":
+            $price = $quantity * $grapefruit;
+            echo number_format($price , 2);
+            break;
+        case "kiwi":
+            $price = $quantity * $kiwi;
+            echo number_format($price , 2);
+            break;
+        case "pineapple":
+            $price = $quantity * $pineapple;
+            echo number_format($price , 2);
+            break;
+        case "grapes":
+            $price = $quantity * $grapes;
+            echo number_format($price , 2);
+            break;
+        default:
+            echo "error";
+            break;
+    
+    } 
+}
+else if ($day == "Saturday" || $day == "Sunday")
+{
+    
+    $banana = 2.70;
+    $apple = 1.25;
+    $orange = 0.90;
+    $grapefruit = 1.60;
+    $kiwi = 3.00;
+    $pineapple = 5.60;
+    $grapes = 4.20;
+    
+    switch ($fruit)
+    {
+        case "banana":
+            $price = $quantity * $banana;
+            echo number_format($price , 2); 
+            break;
+        case "apple";
+            $price = $quantity * $apple;
+            echo number_format($price , 2);
+            break;
+        case "orange":
+            $price = $quantity * $orange;
+            echo number_format($price , 2);
+            break;
+        case "grapefruit":
+            $price = $quantity * $grapefruit;
+            echo number_format($price , 2);
+            break;
+        case "kiwi":
+            $price = $quantity * $kiwi;
+            echo number_format($price , 2);
+            break;
+        case "pineapple":
+            $price = $quantity * $pineapple;
+            echo number_format($price , 2);
+            break;
+        case "grapes":
+            $price = $quantity * $grapes;
+            echo number_format($price , 2);
+            break;
+        default:
+            echo "error";
+            break;
+    }
+}
+else
+{
+    echo "error";
+}
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?php
+
+
+$excursionPrice = floatval(readline());
+$numPuzzles = intval(readline());
+$numDolls = intval(readline());
+$numBears = intval(readline());
+$numMinions = intval(readline());
+$numTrucks = intval(readline());
+
+$numOfAllToys = $numPuzzles + $numDolls + $numBears + $numMinions + $numTrucks;
+$priceForAllToys = $numPuzzles * 2.60 + $numDolls * 3 + $numBears * 4.10 + 
+        $numMinions * 8.20 + $numTrucks * 2;
+
+if ($numOfAllToys >= 50)
+{
+    $priceForAllToys -= $priceForAllToys * 0.25;
+}
+
+
+$priceForAllToys -= $priceForAllToys * 0.10;
+
+if ($excursionPrice <= $priceForAllToys)
+{
+    printf("Yes! %.2f lv left." , abs($excursionPrice - $priceForAllToys));
+}
+else
+{
+    printf("Not enough money! %.2f lv needed.", abs($excursionPrice - $priceForAllToys));
+}
+
+
+

@@ -1,0 +1,12 @@
+<?php
+
+$sectors = intval(readline());
+$capacity = intval(readline());
+$ticketPrice = floatval(readline());
+
+$totalEarned = $capacity * $ticketPrice;
+$oneSectorMoney = $totalEarned / $sectors;
+$moneyForCharity = ($totalEarned - ($oneSectorMoney * 0.75)) / 8;
+
+echo "Total income - " . number_format($totalEarned , 2, '.' , '') . "BGN" . PHP_EOL;
+echo "Money for charity " . number_format($moneyForCharity , 2 , '.' , '') . "BGN";

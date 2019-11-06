@@ -1,0 +1,19 @@
+<?php
+
+$timeFirst = intval(readline());
+$timeSecond = intval(readline());
+$timeThird = intval(readline());
+
+$totalSeconds = $timeFirst + $timeSecond + $timeThird;
+$minutes = intval($totalSeconds / 60);
+$secondsLeft = intval($totalSeconds % 60);
+
+if ($secondsLeft < 10)
+{
+    printf("%u:0%s",$minutes , $secondsLeft);
+}
+else
+{
+    echo "$minutes:$secondsLeft";
+}
+

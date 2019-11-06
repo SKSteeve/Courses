@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+                <legend>Customer Details</legend>
+                <p><focused>First Name <input type="text" placeholder="George"></focused></p>
+                <p>Last Name <input type="text" placeholder="Devis"></p>
+                <p>Male<input type="radio" value="male">
+                Female<input type="radio" value="female">
+                Other<input type="radio" value="other"></p>
+                <p>Preferred contact method:
+                Email <input type="radio" value="email">
+                Phone <input type="radio" value="phone"></p>
+                <p>Email <input type="email" placeholder="your@email.com"></p>
+                <p>Phone <input type="number" placeholder="+359885236225"></p>
+                <p>Town <select>
+                    <option value="Varna">Varna</option>
+                    <option value="Plovdiv">Plovdiv</option>
+                    <option value="Burgas">Burgas</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Pleven">Pleven</option>
+                </select></p>
+                <p>Age <input type="number" min="18" max="70"></p>
+                <p>Programming language <datalist>
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
+                    <option value="c#">C#</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="other">Other</option>
+                </datalist></p>
+                <p><textarea rows="5" cols="20" placeholder="More information..."></textarea></p>
+                <p><input type="checkbox" value="checked">I agree the Terms and Conditions</p>
+                <p><input type="submit" value="Send"></p>
+        </fieldset>
+    </form>
+</body>
+</html>

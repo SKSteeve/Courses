@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, button, input, option, select, form {
+    font: inherit;
+}
+
+
+header {
+    height: 4em;
+    background-color: orangered;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 2em;
+    width: 100%;
+}
+
+header li {
+    padding-right: 1em;
+}
+
+header li:nth-child(5) {
+    margin-right: 7em;
+}
+
+header li:last-child {
+    float: right;
+}
+
+.search-bar {
+    margin-right: 25em;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+main {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.rooms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.rooms img {
+    width: 23%;
+    height: 300px;
+}
+
+main span {
+    padding-right: 12em;
+}

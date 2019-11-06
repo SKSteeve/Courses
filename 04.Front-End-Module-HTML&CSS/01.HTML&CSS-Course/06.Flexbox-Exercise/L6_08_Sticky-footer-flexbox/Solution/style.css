@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 "Verdana", sans-serif;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 4em
+}
+
+.site-content {
+    flex-grow: 1;
+    background: #666;
+}
+
+.site-content h2 {
+    background-color: teal;
+    padding: 0.5em 0 1em 0;
+}
+
+.site-header {
+    padding-bottom: 2em;
+    border-bottom: 5px solid #000;
+    margin-bottom: 1em;
+}
+
+.site-footer {
+    padding-top: 2em;
+    border-top: 5px solid #000;
+    margin-top: 1em;
+}

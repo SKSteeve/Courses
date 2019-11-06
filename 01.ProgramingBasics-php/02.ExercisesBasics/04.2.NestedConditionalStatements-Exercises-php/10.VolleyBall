@@ -1,0 +1,21 @@
+<?php
+
+$year = readline();
+$p = intval(readline());
+$h = intval(readline());
+
+
+$pGamesSf = $p * (2/3);
+$weekendsSfGames = (48 - $h) * (3/4);
+$totalGames = $pGamesSf + $weekendsSfGames + $h;
+if ($year == "leap")
+{
+    echo floor($totalGames *= 1.15);
+}
+else
+{
+    echo floor($totalGames);
+}
+
+
+

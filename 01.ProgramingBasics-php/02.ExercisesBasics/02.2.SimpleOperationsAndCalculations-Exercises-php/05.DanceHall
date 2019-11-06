@@ -1,0 +1,15 @@
+<?php
+
+
+$length = floatval(readline());
+$width = floatval(readline());
+$squareA = floatval(readline());
+
+$areaRoom = $length * $width;
+$areaSquare = $squareA * $squareA;
+$areaBench = $areaRoom / 10;
+
+$areaRoomFree = ($areaRoom - ($areaSquare + $areaBench)) * 10000;
+$freeAreaForDancer = $areaRoomFree / 7040;
+
+echo floor($freeAreaForDancer);

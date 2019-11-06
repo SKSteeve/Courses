@@ -1,0 +1,26 @@
+<?php
+
+$num = readline();
+
+$max = PHP_INT_MIN;
+$min = PHP_INT_MAX;
+
+for($i = 0 ; $i < $num && $num != "END"; $i++)
+{
+    $n2 = readline();
+    if($n2 == "END")
+    {
+        break;
+    }
+    $n2 = floatval($n2);
+    if($max < $n2)
+    {
+        $max = $n2;
+    }
+    if($min > $n2)
+    {
+        $min = $n2;
+    }
+}
+echo "Max number: " . $max . PHP_EOL;
+echo "Min number: " . $min . PHP_EOL;

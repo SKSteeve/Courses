@@ -1,0 +1,27 @@
+<?php
+
+$num = intval(readline());
+$maxNum = PHP_INT_MIN;
+$sum = 0;
+$diff = 0;
+
+for($i = 0; $i < $num; $i++)
+{
+    $n = intval(readline());
+    if($n > $maxNum)
+    {
+        $maxNum = $n;
+    }
+    $sum = $sum + $n;
+}
+$sum = abs($sum - $maxNum);
+$diff = abs($sum - $maxNum);
+
+if($sum == $maxNum)
+{
+    echo "Yes" . PHP_EOL . "Sum = " . $maxNum;
+}
+else
+{
+    echo "No" . PHP_EOL . "Diff = " . $diff;
+}

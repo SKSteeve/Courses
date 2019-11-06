@@ -1,0 +1,28 @@
+<?php
+
+$command = readline();
+
+$maxPoints = PHP_INT_MIN;
+
+while($command != "STOP")
+{
+    $points = 0;
+    $winner = $command;
+    
+    for($i = 0; $i < strlen($command); $i++)
+    {
+        $points += ord($command[$i]);
+    }
+    if($maxPoints < $points)
+    {
+        $maxPoints = $points;
+    }
+    $command = readline(); 
+}
+if($command == "STOP")
+{
+    echo "Winner is $winner - $maxPoints!";
+}
+
+
+// TO DO: 60 / 100 jusdge

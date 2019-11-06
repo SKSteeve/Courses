@@ -1,0 +1,21 @@
+<?php
+
+$typeProjection = readline();
+$rows = floatval(readline());
+$cows = floatval(readline());
+$places = $rows * $cows;
+if ($typeProjection == "Premiere")
+{
+    $sums = $places * 12;
+}
+else if ($typeProjection == "Normal")
+{
+    $sums = $places * 7.5;
+}
+else if ($typeProjection == "Discount")
+{
+    $sums = $places * 5;
+}
+
+echo number_format($sums , 2 , '.', '') . " leva";
+

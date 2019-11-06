@@ -1,0 +1,70 @@
+<?php
+
+$flower = readline();
+$quantity = intval(readline());
+$budget = intval(readline());
+
+$roses = 5;
+$dahlias = 3.80;
+$tulips = 2.80;
+$narcissus = 3;
+$gladiolus = 2.50;
+
+$price = 0;
+
+if ($flower == "Roses")
+{
+    $price = $quantity * $roses;
+    if ($quantity > 80)
+    {
+        $price -= $price * 0.1; 
+    }
+}
+else if ($flower == "Dahlias")
+{
+    $price = $quantity * $dahlias;
+    if ($quantity > 90)
+    {
+        $price -= $price * 0.15;
+    }
+}
+else if ($flower == "Tulips")
+{
+    $price = $quantity * $tulips;
+    if ($quantity > 80)
+    {
+        $price -= $price * 0.15;
+    }
+}
+else if ($flower == "Narcissus")
+{
+    $price = $quantity * $narcissus;
+    if ($quantity < 120)
+    {
+        $price += $price * 0.15;
+    }
+}
+else
+{
+    $price = $quantity * $gladiolus;
+    if ($quantity < 80)
+    {
+        $price += $price * 0.2;
+    }
+}
+
+
+
+if ($price > $budget)
+{
+    $price -= $budget;
+    printf("Not enough money, you need %0.2f leva more.", $price);
+}
+else
+{
+    $price -= $budget;
+    printf("Hey, you have a great garden with $quantity $flower and %0.2f leva left." ,abs($price));  
+}
+
+
+

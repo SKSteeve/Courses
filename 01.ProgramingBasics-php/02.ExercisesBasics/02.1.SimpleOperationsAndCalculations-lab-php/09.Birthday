@@ -1,0 +1,13 @@
+<?php
+
+$length = intval(readline());
+$width = intval(readline());
+$height = intval(readline());
+$unArea = floatval(readline());
+
+$capacity = ($length * $width * $height);
+$intoLiters = $capacity * 0.001;
+$calculatedPercent = $unArea * $intoLiters / 100;
+$neededLiters = $intoLiters - $calculatedPercent;
+echo sprintf('%0.3f' ,$neededLiters);
+

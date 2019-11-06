@@ -1,0 +1,62 @@
+<?php
+
+$figureType = readline();
+
+if ($figureType == "square")
+{
+    $squareA = floatval(readline());
+    $area = $squareA * $squareA;
+}
+else if ($figureType == "rectangle")
+{
+    $rectangleA = floatval(readline());
+    $rectangleB = floatval(readline());
+    $area = $rectangleA * $rectangleB;
+}
+else if ($figureType == "circle")
+{
+    $circleR = floatval(readline());
+    $area = pi() * $circleR * $circleR;
+}
+else if ($figureType == "triangle")
+{
+    $triA = floatval(readline());
+    $triH = floatval(readline());
+    $area = $triA * $triH / 2;
+}
+echo number_format($area , 3);
+
+
+
+//$figureType = readline();
+//$area = 0;
+
+//switch ($figureType)
+//{
+//    case 'square':
+//        $a = floatval(readline());
+//        $area = $a * $a;
+//        break;
+//    case 'rectangle':
+//        $a = floatval(readline());
+//        $b = floatval(readline());
+//        $area = $a * $b;
+//        break;
+//    case 'circle':
+//        $r = floatval(readline());
+//        $area = pi() * $r * $r;
+//        break;
+//    case 'triangle':
+//        $a = floatval(readline());
+//        $h = floatval(readline());
+//        $area = $a * $h / 2;
+//        break;
+//}
+
+//echo number_format($area , 3);
+
+
+
+
+
+

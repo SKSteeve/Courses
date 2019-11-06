@@ -1,0 +1,48 @@
+<?php
+
+$quota = intval(readline());
+$fishCounter = 0;
+$lostMoney = 0;
+$earnedMoney = 0;
+
+while(true)
+{
+    $fishName = readline();
+    if($fishName == "Stop")
+    {
+        break;
+    }
+    $fishCounter++;
+    $fishKilograms = floatval(readline());
+    $sumChar = 0;
+    for($i = 0; $i < strlen($fishName); $i++)
+    {
+        $char = $fishName[$i];
+        $sumChar += ord($char);
+    }
+    $fishPrice = $sumChar / $fishKilograms;
+    if($fishCounter % 3 == 0)
+    {
+        $earnedMoney += $fishPrice;
+    }
+    else
+    {
+        $lostMoney += $fishPrice;
+    }
+    
+    $quota--;
+    if($quota < 1)
+    {
+        echo "Lyubo fulfilled the quota!" . PHP_EOL;
+        break;
+    }
+}
+if($lostMoney <= $earnedMoney)
+{
+    echo "Lyubo's profit from $fishCounter fishes is " . number_format($earnedMoney - $lostMoney,2,'.','') . " leva.";
+}
+else
+{
+    echo "Lyubo lost " . number_format($lostMoney - $earnedMoney , 2 , '.' , '') . " leva today.";
+}
+

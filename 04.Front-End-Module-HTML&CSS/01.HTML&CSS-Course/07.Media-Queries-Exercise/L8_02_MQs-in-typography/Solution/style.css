@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(233, 231, 231);
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+h1, h2 {
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+    font-size: 23px;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+blockquote {
+    width: 40%;
+    float: right;
+    border-left: 2px solid black;
+    padding-left: 2em;
+    font-style: italic;
+    color: rgba(123, 123, 116, 1);
+}
+blockquote p:last-child {
+    text-align: right;
+}
+
+.padding1 {
+    margin-right: 52%;
+}
+
+.container {
+    max-width: 66em;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    padding: 0 3em;
+}
+
+.site-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 30px;
+    padding: 1.5em 0em 0.5em 0em;
+}
+
+.first-img {
+    float: right;
+    
+}
+div img 
+{
+    box-sizing: border-box;
+    width: 160px;
+    height: auto;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid black;
+    background-color: white;
+}
+.second-img {
+    float: left;
+    padding: 0 2em 0 0;
+}
+
+.second-img img {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+
+    .first-img {
+        float: unset;
+        display: flex;
+        padding: 2em 0;
+    }
+
+    blockquote {
+        float: unset;
+        display: block;
+        height: 10em;
+        margin: 0 0 2em 2em;
+        width: 20em;
+    }
+
+    .padding1 {
+        width: 100%;
+    }
+
+    .second-img {
+        float: unset;
+        padding: 2em 0;
+        display: flex;
+        
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1800px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+
+@media screen and (min-width: 1800px) {
+    html {
+        font-size: 23px;
+    }
+}

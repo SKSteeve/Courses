@@ -1,0 +1,13 @@
+.gallery li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    margin: 1.2% 1%;
+    border: 0.4rem solid black;
+    padding: 0.5em;
+}
+
+.gallery li img {
+    display: inline-block;
+    width: 100%;
+}

@@ -1,0 +1,49 @@
+<?php
+
+$month = readline();
+$nights = intval(readline());
+$studio = 0;
+$apartment = 0;
+
+if ($month == "May" || $month == "October")
+{
+    $studio = 50;
+    $apartment = 65;
+    $studio = $studio * $nights;
+    $apartment = $apartment * $nights;
+    if ($nights > 14)
+    {
+        $studio *= 0.70;
+    }
+    else if ($nights > 7)
+    {
+        $studio *= 0.95;
+    }
+}
+else if ($month == "June" || $month == "September")
+{
+    $studio = 75.20;
+    $apartment = 68.70;
+    $studio = $studio * $nights;
+    $apartment = $apartment * $nights;
+    if ($nights > 14)
+    {
+        $studio *= 0.80;
+    }
+}
+else if ($month == "July" || $month == "August")
+{
+    $studio = 76;
+    $apartment = 77;
+    $studio = $studio * $nights;
+    $apartment = $apartment * $nights;
+}
+
+
+if ($nights > 14)
+{
+    $apartment *= 0.90;
+}
+
+printf("Apartment: %.2f lv." . PHP_EOL , $apartment);
+printf("Studio: %.2f lv." , $studio);

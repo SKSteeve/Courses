@@ -1,0 +1,21 @@
+<?php
+
+$name = readline();
+$budget = floatval(readline());
+$numBotles = intval(readline());
+$numChips = intval(readline());
+
+$beerPrice = 1.20;
+$chipsPrice = ($numBotles * $beerPrice) * 0.45;
+$totalChips = $chipsPrice * $numChips;
+$totalBeer = $numBotles * $beerPrice;
+
+$sum = ceil($totalChips) + $totalBeer;
+if($sum > $budget)
+{
+    echo "$name needs " . number_format($sum - $budget,2,'.','') . " more leva!";
+}
+else
+{
+    echo "$name bought a snack and has " . number_format($budget - $sum,2,'.','') . " leva left.";
+}

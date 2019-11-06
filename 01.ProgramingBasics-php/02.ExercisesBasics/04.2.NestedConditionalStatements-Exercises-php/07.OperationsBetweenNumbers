@@ -1,0 +1,55 @@
+<?php
+
+$num1 = floatval(readline());
+$num2 = floatval(readline());
+$operator = readline();
+$calculated = 0.0;
+
+if ($operator == '+' || $operator == '-' || $operator == '*')
+{
+    if ($operator == '+')
+    {
+        $calculated = $num1 + $num2;
+    }
+    else if ($operator == '-')
+    {
+        $calculated = $num1 - $num2;
+    }
+    else if ($operator == '*') 
+    {
+        $calculated = $num1 * $num2;
+    }
+    if ($calculated % 2 == 0)
+    {
+        printf("$num1 $operator $num2 = $calculated - even");
+    }
+    else
+    {
+        printf("$num1 $operator $num2 = $calculated - odd");
+    }
+}
+else if ($operator == '/') 
+{
+    if ($num2 == 0)
+    {
+        echo "Cannot divide $num1 by zero";
+    }
+    else
+    {
+        $calculated = $num1 / $num2;
+        printf("$num1 / $num2 = %.2f" , $calculated);
+    }
+}
+else
+{
+    if ($num2 == 0)
+    {
+        echo "Cannot divide $num1 by zero";
+    }
+    else
+    {
+        $calculated = $num1 % $num2;
+        printf("$num1 %% $num2 = $calculated");
+    }
+}
+

@@ -1,0 +1,27 @@
+<?php
+
+$num = floatval(readline());
+$count = 0;
+$sum = 0;
+while($count < $num)
+{
+    $amount = floatval(readline());
+    $count++;
+    
+    if ($amount < 0)
+    {
+        echo "Invalid operation!". PHP_EOL;
+        break;
+    }
+    
+    $sum = $sum + $amount;
+    printf ("Increase: %0.2f" .PHP_EOL , $amount);
+    
+}
+
+printf("Total: %0.2f" , $sum);
+
+
+
+
+

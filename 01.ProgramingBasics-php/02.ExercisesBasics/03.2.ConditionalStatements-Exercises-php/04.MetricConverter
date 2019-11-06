@@ -1,0 +1,75 @@
+<?php
+
+$num = floatval(readline());
+$input = readline();
+$output = readline();
+
+if ($input == "mm")
+{
+    $num /= 1000;
+}
+else if ($input == "cm")
+{
+    $num /= 100;
+}
+
+
+if ($output == "mm")
+{
+    $num *= 1000;
+}
+else if ($output == "cm")
+{
+    $num *= 100;
+}
+
+echo sprintf('%0.3f',$num);
+
+
+
+
+
+//$number = floatval(readline());
+//$input = readline();
+//$output = readline();
+
+//if ($input == "m")
+//{
+//    if ($output == "cm")
+//    {
+//        $number *= 100;
+//    }
+//    else 
+//    {
+//        $number *= 1000;
+//    }
+//}
+//else if ($input == "cm")
+//{
+//    if ($output == "m")
+//    {
+//        $number /= 100;
+//    }
+//    else
+//    {
+//        $number *= 10;
+//   }
+//}
+//else if ($input == "mm")
+//{
+//    if ($output == "m")
+//    {
+//        $number /= 1000;
+//    }
+//    else
+//   {
+//        $number /= 10;
+//   }
+//}
+//echo sprintf('%0.3f',$number);
+
+
+
+
+
+

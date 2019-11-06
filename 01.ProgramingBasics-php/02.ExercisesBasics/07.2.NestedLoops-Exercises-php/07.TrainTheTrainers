@@ -1,0 +1,26 @@
+<?php
+
+$numJudgers = intval(readline());
+$pres = readline();
+
+$totalSum = 0;
+$numGrades = 0;
+
+while($pres != "Finish")
+{
+    $sum = 0;
+    for($i = 0; $i < $numJudgers; $i++)
+    {
+        $numGrades++;
+        $currGrade = floatval(readline());
+        $sum += $currGrade;
+    }
+    
+    $avgGrade = $sum / $numJudgers;
+    echo "$pres - " . number_format($avgGrade , 2 , '.' , '') . "." . PHP_EOL;
+    $totalSum += $sum;
+    $pres = readline();
+}
+$totalGrade = $totalSum / $numGrades;
+echo "Student's final assessment is " . number_format($totalGrade , 2 , '.', '') . ".";
+

@@ -1,0 +1,31 @@
+<?php
+
+$name = readline();
+$counter = 1;
+$skusan = 0;
+$sbor = 0;
+$a = true;
+while($counter <= 12)
+{
+    $grade = floatval(readline());
+    if($grade >= 4.00)
+    {
+        $counter++;
+        $sbor += $grade;
+    }
+    else
+    {
+        $skusan++;
+        if ($skusan > 1)
+        {
+            $a = false;
+            echo "$name has been excluded at $counter grade";
+            break;
+        }
+    }
+}
+if ($a)
+{
+    $sbor = $sbor / 12;
+    echo "$name graduated. Average grade: " . number_format($sbor , 2);
+}

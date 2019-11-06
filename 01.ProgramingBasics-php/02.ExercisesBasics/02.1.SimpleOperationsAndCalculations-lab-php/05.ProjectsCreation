@@ -1,0 +1,9 @@
+<?php
+
+$b1 = (float)readline();
+$b2 = floatval(readline());
+$h = floatval(readline());
+
+$areaOfTrapec = ($b1 + $b2) * $h / 2;
+echo "$areaOfTrapec";
+

@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(238, 238, 238);    
+}
+
+section, article {
+    margin-bottom: 2rem;
+}
+
+header {    
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-bottom: 0.2em solid black;
+    margin-bottom: 2rem;
+}
+
+section img {
+    float: right;
+    margin-left: 1em;
+}
+
+article img {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.page {
+    width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+}
+
+.content main {
+    flex: 0 0 70%;
+    margin-right: 1em;
+}
+
+.content aside {
+    flex: 0 0 25%;    
+}
+
+.content aside nav > ul {
+    padding: 0.5rem 1rem;
+}
+
+.content aside nav > ul li {
+    list-style: square;
+    list-style-position: inside;
+}
+
+.content aside nav > ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+@media (max-width: 950px) {
+    header {
+        font-size: 14px;
+    }
+    
+    blockquote {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    blockquote {
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}

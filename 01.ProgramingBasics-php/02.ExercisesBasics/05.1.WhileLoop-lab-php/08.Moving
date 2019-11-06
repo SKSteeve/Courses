@@ -1,0 +1,31 @@
+<?php
+
+$width = intval(readline());
+$length = intval(readline());
+$height = intval(readline());
+
+$command = readline();
+$roomSpace = $width * $length * $height;
+$freeSpace = $roomSpace;
+$emptySpace = 0;
+$busySpace = 0;
+while($command != 'Done')
+{
+    $busySpace = $command + $busySpace;
+    $command = readline();
+    if ($freeSpace < $busySpace)
+    {
+        $emptySpace = $busySpace - $freeSpace;
+        echo "No more free space! You need $emptySpace Cubic meters more.";
+        break;
+    }
+    
+}
+$emptySpace = $freeSpace - $busySpace;
+if ($command == 'Done' && $emptySpace > 0)
+{
+    echo "$emptySpace Cubic meters left.";
+}
+
+
+

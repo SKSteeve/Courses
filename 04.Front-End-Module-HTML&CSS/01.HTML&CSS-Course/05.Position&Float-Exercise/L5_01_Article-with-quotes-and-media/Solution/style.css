@@ -1,0 +1,50 @@
+@import url('reset.css');
+@import url('typography.css');
+@import url('layout.css');
+
+body {
+    background-color: rgb(233, 231, 231);
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+h1, h2 {
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+    font-size: 23px;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+blockquote {
+    width: 40%;
+    float: right;
+    border-left: 2px solid black;
+    padding-left: 2em;
+    font-style: italic;
+    color: rgba(123, 123, 116, 1);
+}
+blockquote p:last-child {
+    text-align: right;
+}
+
+.padding1 {
+    padding-right: 50%;
+}
+
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 30px;
+    padding: 1.5em 0em 0.5em 0em;
+}

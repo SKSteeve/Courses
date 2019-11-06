@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.container1 {
+    background-color: lightblue;
+}
+
+.container2 {
+    background-color: lightsalmon;
+}
+
+.card {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid silver;
+    padding: 0.2em;
+    padding-bottom: 0;
+    background: lightseagreen;
+    border-radius: 0.5em;
+    
+}
+
+.media-less img {
+    width: 350px;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.media-big img {
+    height: 500px;
+    width: auto;
+    border-radius: 0.5em;
+}
+
+.card:hover {
+    background: slateblue;
+}
+
+.icon {
+    position: absolute;
+    color: white;
+    bottom: 1em;
+    right: 1em;
+}

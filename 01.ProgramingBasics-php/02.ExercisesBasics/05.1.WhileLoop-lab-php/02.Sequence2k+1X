@@ -1,0 +1,12 @@
+<?php
+
+
+$num = intval(readline());
+$bonus = 1;
+while($bonus <= $num)
+{
+    echo "$bonus".PHP_EOL;
+    $bonus = $bonus * 2 + 1;
+}
+
+

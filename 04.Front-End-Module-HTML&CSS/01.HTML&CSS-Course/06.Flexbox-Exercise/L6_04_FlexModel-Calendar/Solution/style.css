@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+body , section , div , span {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    min-height: 10em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.week {
+    background-color: #CCC;
+    flex: 1 0 80%;
+}
+
+.notes {
+    background: cornflowerblue;
+    flex: 0 1 20%;
+    flex-direction: column;
+}
+
+span {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.week span:nth-child(1) {
+    flex: 0 1 100%;
+}
+
+.week span {
+    padding-top: 1.5em;
+    height: 25%;
+}
+
+.week span:nth-child(2),
+.week span:nth-child(3),
+.week span:nth-child(4),
+.week span:nth-child(5),
+.week span:nth-child(6) {
+    width: 20%;
+    font-size: small;
+}
+
+.week span:nth-child(7)
+{
+    flex-basis: 100%;
+}
+
+.week span:nth-child(8),
+.week span:nth-child(9) {
+    flex-basis: 50%;
+    font-size: small;
+}
+
+.notes span {
+    height: 10em;
+    width: 100%;
+    padding-top: 0.5em;
+}

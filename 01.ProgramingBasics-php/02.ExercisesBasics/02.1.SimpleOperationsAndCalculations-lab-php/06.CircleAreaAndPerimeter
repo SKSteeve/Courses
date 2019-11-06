@@ -1,0 +1,7 @@
+<?php
+
+$r = floatval(readline());
+$area = pi() * $r * $r;
+$perimeter = pi() * 2 * $r;
+echo round($area , 2) . "\r\n";
+echo round($perimeter, 2) . PHP_EOL;

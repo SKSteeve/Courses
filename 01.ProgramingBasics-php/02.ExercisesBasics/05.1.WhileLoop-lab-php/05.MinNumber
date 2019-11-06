@@ -1,0 +1,20 @@
+<?php
+
+$num = floatval(readline());
+$counter = 0;
+$min = PHP_INT_MAX;
+while ($counter < $num) 
+{
+    $newNum = intval(readline());
+    if ($min > $newNum)
+    {
+        $min = $newNum;
+    }
+    $counter ++;
+}
+echo $min;
+
+
+
+
+

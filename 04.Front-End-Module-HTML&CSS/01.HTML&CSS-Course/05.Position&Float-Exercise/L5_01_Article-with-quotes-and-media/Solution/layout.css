@@ -1,0 +1,17 @@
+.first-img {
+    float: right;
+}
+div img 
+{
+    width: 160px;
+    height: auto;
+}
+.second-img {
+    float: left;
+    padding: 0 2em 0 0;
+}
+
+.second-img img {
+    width: 200px;
+    height: auto;
+}

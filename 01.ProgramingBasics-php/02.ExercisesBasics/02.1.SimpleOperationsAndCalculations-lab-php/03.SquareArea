@@ -1,0 +1,5 @@
+<?php
+
+$a = (float)readline();
+$area = $a * $a;
+echo "$area";

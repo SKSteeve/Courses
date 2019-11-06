@@ -1,0 +1,29 @@
+<?php
+
+$passedSteps = 0;
+$unknown = '';
+while($passedSteps < 10000)
+{
+    $unknown = readline();
+    if ($unknown == "Going home")
+    {
+        $stepsToHome = intval(readline());
+        $passedSteps += $stepsToHome;
+        break;
+    }
+    $passedSteps += intval($unknown);
+    
+}
+if($passedSteps >= 10000)
+{
+    echo "Goal reached! Good job!";
+}
+else
+{
+    $difference = 10000 - $passedSteps;
+    echo $difference . " more steps to reach goal.";
+}
+
+
+
+

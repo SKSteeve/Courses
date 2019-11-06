@@ -1,0 +1,8 @@
+@import url('reset.css');
+@import url('gallery.css');
+
+
+.site {
+    max-width: 60em;
+    margin: 0 auto;
+}

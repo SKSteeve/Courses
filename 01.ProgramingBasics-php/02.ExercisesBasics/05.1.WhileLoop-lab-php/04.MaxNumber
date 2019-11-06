@@ -1,0 +1,17 @@
+<?php
+
+$num = floatval(readline());
+$counter = 0;
+$biggest = PHP_INT_MIN;
+while ($counter < $num) 
+{
+    $newNum = intval(readline());
+    if ($biggest < $newNum)
+    {
+        $biggest = $newNum;
+    }
+    $counter ++;
+}
+echo $biggest;
+
+

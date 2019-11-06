@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding-bottom: 4em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 3px 6px 20px 10px rgba(0, 0, 0, 0.25);
+}
+
+div img {
+    width: 400px;
+    height: auto;
+}
+
+.title {
+    max-width: 23em;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.title h1 {
+    font: Georgia, serif;
+    font-size: 1.2em;
+}
+
+p {
+    padding-top: 0.4em;
+}
+
+a {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    background-color: rgb(0, 153, 0);
+    text-decoration: none;
+    color: white;
+    padding: 0.3em 1em 0.3em 1em;
+    font-weight: normal;
+    border-radius: 0.4em;
+}
+

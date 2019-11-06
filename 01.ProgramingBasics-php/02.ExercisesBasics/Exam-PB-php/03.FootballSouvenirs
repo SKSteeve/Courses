@@ -1,0 +1,91 @@
+<?php
+
+$team = readline();
+$souvenirType = readline();
+$numSouvenirs = intval(readline());
+$sum = 0;
+if($team == "Argentina")
+{
+    switch ($souvenirType)
+    {
+        case "flags":
+            $sum = 3.25;
+            break;
+        case "caps":
+            $sum = 7.20;
+            break;
+        case "posters":
+            $sum = 5.10;
+            break;
+        case "stickers";
+            $sum = 1.25;
+            break;
+    }
+}
+else if($team == "Brazil")
+{
+    switch ($souvenirType)
+    {
+        case "flags":
+            $sum = 4.20;
+            break;
+        case "caps":
+            $sum = 8.50;
+            break;
+        case "posters":
+            $sum = 5.35;
+            break;
+        case "stickers";
+            $sum = 1.20;
+            break;
+    }
+}
+else if($team == "Croatia")
+{
+    switch ($souvenirType)
+    {
+        case "flags":
+            $sum = 2.75;
+            break;
+        case "caps":
+            $sum = 6.90;
+            break;
+        case "posters":
+            $sum = 4.95;
+            break;
+        case "stickers";
+            $sum = 1.10;
+            break;
+    }
+}
+else if($team == "Denmark")
+{
+    switch ($souvenirType)
+    {
+        case "flags":
+            $sum = 3.10;
+            break;
+        case "caps":
+            $sum = 6.50;
+            break;
+        case "posters":
+            $sum = 4.80;
+            break;
+        case "stickers";
+            $sum = 0.90;
+            break;
+    }
+}
+if($team != "Argentina" && $team != "Denmark" && $team != "Brazil" && $team != "Croatia")
+{
+    echo "Invalid country!";
+    return ;
+}
+if($souvenirType != "flags" && $souvenirType != "caps" && $souvenirType != "posters" && $souvenirType != "stickers")
+{
+    echo "Invalid stock!";
+    return;
+}
+
+$sum = $sum * $numSouvenirs;
+echo "Pepi bought $numSouvenirs $souvenirType of $team for " . number_format($sum,2,'.','') . " lv.";

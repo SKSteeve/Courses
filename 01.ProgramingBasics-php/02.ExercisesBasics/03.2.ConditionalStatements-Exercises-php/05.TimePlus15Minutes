@@ -1,0 +1,26 @@
+<?php
+
+
+$startHours = intval(readline());
+$startMinutes = intval(readline());
+
+$totalMins = $startHours * 60 + $startMinutes + 15;
+
+$hours = floor($totalMins / 60);
+$minutes = $totalMins % 60;
+if ($hours >= 24)
+{
+    $hours -= 24;
+}
+
+if ($minutes < 10)
+{
+    echo "$hours:0$minutes";
+}
+else
+{
+    printf("%u:%s",$hours , $minutes);
+}
+
+
+

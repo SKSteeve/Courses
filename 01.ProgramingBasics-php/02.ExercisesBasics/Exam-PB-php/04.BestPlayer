@@ -1,0 +1,37 @@
+<?php
+
+$command = readline();
+$lastPlayerGoals = 0;
+$bestPlayer = '';
+while($command != "END")
+{
+    $name = $command;
+    $currPlayerGoals = intval(readline());
+    
+    if($currPlayerGoals > $lastPlayerGoals)
+    {
+        $bestPlayer = $name;
+        $lastPlayerGoals = $currPlayerGoals;
+    }
+    if($currPlayerGoals == $lastPlayerGoals)
+    {
+        $name = $bestPlayer;
+    }
+    if($currPlayerGoals >= 10)
+    {
+        echo "$name is the best player!" . PHP_EOL;
+        echo "He has scored $lastPlayerGoals goals and made a hat-trick !!!";
+        return;
+    }
+    $command = readline();
+}
+if($lastPlayerGoals >= 3)
+{
+    echo "$name is the best player!" . PHP_EOL;
+    echo "He has scored $lastPlayerGoals goals and made a hat-trick !!!";
+}
+else   
+{
+    echo "$name is the best player!" . PHP_EOL;
+    echo "He has scored $lastPlayerGoals goals.";
+}

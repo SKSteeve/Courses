@@ -1,0 +1,18 @@
+<?php
+
+
+$num = floatval(readline());
+
+while ($num < 1 || $num > 100)
+{
+    echo "Invalid number!" . PHP_EOL;
+    $num = floatval(readline());
+    
+}
+
+echo "The number is: $num";
+
+
+
+
+

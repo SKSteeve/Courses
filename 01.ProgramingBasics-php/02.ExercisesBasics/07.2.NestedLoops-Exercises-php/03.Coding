@@ -1,0 +1,30 @@
+<?php
+
+$n = readline();
+$leng = strlen($n);
+
+
+for($i = $leng - 1; $i >= 0; $i--)
+{
+    $numCon = $n[$i] + 33;
+    if($n[$i] == 0)
+    {
+        echo "ZERO" . PHP_EOL;
+        continue;
+    }
+    for($j = 0; $j < $n[$i]; $j++)
+    {
+        echo chr($numCon);
+    }
+    echo PHP_EOL;
+}
+
+
+
+
+
+
+
+
+
+

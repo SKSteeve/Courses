@@ -1,0 +1,25 @@
+<?php
+
+
+$subject = readline();
+
+if ($subject == "banana" || $subject == "apple" || $subject == "kiwi" ||
+        $subject == "cherry" || $subject == "lemon" || $subject == "grapes" ) 
+{
+    echo "fruit";
+}
+else if ($subject == "tomato" || $subject == "cucumber" || $subject == "pepper" || $subject == "carrot")
+{
+    echo "vegetable";
+}
+else
+{
+    echo "unknown";
+}
+
+
+
+
+
+
+

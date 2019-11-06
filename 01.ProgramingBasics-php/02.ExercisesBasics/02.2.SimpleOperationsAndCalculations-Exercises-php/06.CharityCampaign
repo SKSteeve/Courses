@@ -1,0 +1,27 @@
+<?php
+
+
+$numOfDays = intval(readline());
+$numOfCoockers = intval(readline());
+$numOfCakes = intval(readline());
+$numOfWafers = intval(readline());
+$numOfPancakes = intval(readline());
+
+//45   for cake
+//5.80 for wafer
+//3.20 for pancake
+
+$coockedForDay = ($numOfCoockers * $numOfCakes) * 45 +
+        ($numOfCoockers * $numOfWafers) * 5.80 + ($numOfCoockers * $numOfPancakes) * 3.20;
+
+$totalPrice = $numOfDays * $coockedForDay;
+$priceWithCost = $totalPrice - ($totalPrice / 8);
+
+echo sprintf('%0.2f',$priceWithCost);
+
+//20
+//8
+//14
+//30
+//16.
+

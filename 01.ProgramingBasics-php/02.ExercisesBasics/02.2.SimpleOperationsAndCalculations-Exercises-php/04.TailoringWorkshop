@@ -1,0 +1,19 @@
+<?php
+
+
+$tables = intval(readline());
+$lengthInMeters = floatval(readline());
+$widthInMeters = floatval(readline());
+
+$blanket = (($lengthInMeters + 0.6) * ($widthInMeters + 0.6)) * $tables ;
+$square = (($lengthInMeters / 2) * ($lengthInMeters / 2)) * $tables;
+
+$inDolars = ($blanket * 7) + ($square * 9);
+echo sprintf("%0.2f" ,$inDolars) . " USD" . PHP_EOL ;
+$inDolars = $inDolars * 1.85;
+echo sprintf("%.2f" ,floatval($inDolars)) . " BGN";
+//10
+//1.20
+//0.65
+//189.90
+//351.32

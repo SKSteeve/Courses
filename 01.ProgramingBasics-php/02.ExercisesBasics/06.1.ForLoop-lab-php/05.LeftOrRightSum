@@ -1,0 +1,33 @@
+<?php
+
+$num = intval(readline());
+$counter = 0;
+$rightSum = 0;
+$leftSum = 0;
+$unknown = 0;
+
+for($i = 0;$i < $num * 2;$i++)
+{
+    $counter++;
+    $unknown = floatval(readline());
+    if($counter <= $num)
+    {
+        $leftSum = $unknown + $leftSum;
+    }
+    else if(true)
+    {
+        $rightSum = $unknown + $rightSum;
+    }
+}
+if($leftSum == $rightSum)
+{
+    echo "Yes, sum = " . $leftSum;
+}
+else
+{
+    echo "No, diff = " . (abs($leftSum - $rightSum));
+}
+
+
+
+

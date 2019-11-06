@@ -1,0 +1,59 @@
+<?php
+
+$resto = floatval(readline());
+$vurnato = 0;
+$monetCounter = 0;
+
+
+    if ($resto >= 2)
+    {
+        $monetCounter = floor($resto / 2);
+        $vurnato = $monetCounter * 2;
+        $resto = $resto - $vurnato;
+    }
+    if ($resto >= 1)
+    {
+        $monetCounter = $monetCounter + 1; // 1 moneta
+        $vurnato = $vurnato + 1;            // 1 lev vurnat
+        $resto = $resto - 1;                // 1.23 - 1 = 0.23 ostavat
+    }
+    if($resto >= 0.5)
+    {
+        $monetCounter = $monetCounter + 1;
+        $vurnato = $vurnato + 0.5;
+        $resto = $resto - 0.5;
+    }
+    if($resto >= 0.2)
+    {
+        $monetCounter = $monetCounter + (floor($resto / 0.2)); // 1 + 1 = 2
+        $vurnato = $vurnato + ((floor($resto / 0.2)) * 0.2); // 1 + 0.2 = 1.20
+        $resto = $resto - ((floor($resto / 0.2)) * 0.2);     // 0.23 - 0.2 = 0.03 ostavat
+    }
+    if($resto >= 0.1)
+    {
+        $monetCounter = $monetCounter + 1;
+        $vurnato = $vurnato + 0.1;
+        $resto = $resto - 0.1;
+    }
+    if($resto >= 0.05)
+    {
+        $monetCounter = $monetCounter + 1;
+        $vurnato = $vurnato + 0.05;
+        $resto = $resto - 0.05;
+    }
+    if($resto >= 0.02)
+    {
+        $monetCounter = $monetCounter + (floor($resto / 0.02)); // 2 + 1 = 3
+        $vurnato = $vurnato + ((floor($resto / 0.02)) * 0.02);  // 1.20 + 0.02 = 1.22
+        $resto = $resto - ((floor($resto / 0.02)) * 0.02);      // 0.03 - 0.02 = 0.01;
+    }
+    if($resto >= 0.01)
+    {
+        $monetCounter = $monetCounter + 1; // 3 + 1 = 4
+        $vurnato = $vurnato + 0.01;     // 1.22 + 0.01 = 1.23
+        $resto = $resto - 0.01;         // 0.01 - 0.01 = 0
+    }
+
+
+echo $monetCounter;
+

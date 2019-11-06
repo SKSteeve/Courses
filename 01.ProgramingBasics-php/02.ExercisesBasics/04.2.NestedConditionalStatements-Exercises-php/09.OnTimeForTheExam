@@ -1,0 +1,69 @@
+<?php
+
+$examHour = intval(readline());
+$examMinutes = intval(readline());
+$arrivedHour = intval(readline());
+$arrivedMinutes = intval(readline());
+$disc = 0;
+
+$examInM = $examHour * 60 + $examMinutes;
+$arrivedInM = $arrivedHour * 60 + $arrivedMinutes;
+if ($arrivedInM <= $examInM && $arrivedInM >= ($examInM - 30))
+{
+    echo "On time" . PHP_EOL;
+    $disc = $examInM - $arrivedInM;
+    if ($disc >= 1)
+    {
+        echo "$disc minutes before the start";
+    }
+}
+else if ($arrivedInM < ($examInM - 30))
+{
+    echo "Early" . PHP_EOL;
+    $disc = $examInM - $arrivedInM;
+    $hour = floor($disc / 60);
+    $min = $disc % 60;
+    if ($disc >= 60)
+    {   
+        if ($min < 10)
+        {
+            echo "$hour:0$min" . "hours before the start";
+        }
+        else
+        {
+            echo "$hour:$min" . "hours before the start";
+        }
+    }
+    else if ($disc < 60 && $disc > 0)
+    {
+        echo "$disc minutes before the start";
+    }
+}
+else if ($arrivedInM > $examInM)
+{
+    echo "Late" . PHP_EOL;
+    $disc = $arrivedInM - $examInM;
+    if ($disc > 0 && $disc < 60)
+    {
+        echo "$disc minutes after the start";
+    }
+    else if ($disc >= 60)
+    {
+        $hour = floor($disc / 60);
+        $min = $disc % 60;
+        if ($min < 10)
+        {
+            echo "$hour:0$min hours after the start";
+        }
+        else
+        {
+            echo "$hour:$min hours after the start";
+        }
+    }
+}
+
+
+
+
+
+

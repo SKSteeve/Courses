@@ -1,0 +1,13 @@
+<?php
+
+$x1 = (float)readline();
+$y1 = (float)readline();
+$x2 = (float)readline();
+$y2 = (float)readline();
+
+$a = abs($x1 - $x2);
+$b = abs($y1 - $y2);
+$area = $a * $b;
+$perimeter = 2 * $a + 2 * $b;
+
+echo sprintf('%0.2f' , $area) . PHP_EOL . sprintf('%0.2f' , $perimeter);

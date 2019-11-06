@@ -1,0 +1,37 @@
+<?php
+
+
+$dohod = floatval(readline());
+$grade = floatval(readline());
+$minimalWorkSalary = floatval(readline());
+
+if ($dohod < $minimalWorkSalary && $grade > 4.5 && $grade >= 5.5)
+{
+    $socialStip = $minimalWorkSalary * 0.35;
+    $excellentStip = $grade * 25;
+    if ($excellentStip >= $socialStip) 
+    {
+        printf("You get a scholarship for excellent results %u BGN" , number_format($excellentStip , 2));
+    }
+    else
+    {
+        printf("You get a Social scholarship %u BGN" ,number_format($socialStip , 2));
+    }
+}
+else if ($dohod < $minimalWorkSalary && $grade > 4.5) 
+{
+    $socialStip = $minimalWorkSalary * 0.35;
+    printf("You get a Social scholarship %u BGN" , number_format($socialStip , 2));
+}
+else if ($grade >= 5.5)
+{
+    $excellentStip = $grade * 25;
+    printf("You get a scholarship for excellent results %u BGN" , number_format($excellentStip , 2));
+}
+else
+{
+    echo "You cannot get a scholarship!";
+}
+
+
+

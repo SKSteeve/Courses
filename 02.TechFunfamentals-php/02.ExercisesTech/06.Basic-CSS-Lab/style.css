@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+}
+p {
+    color: darkviolet;
+}
+li {
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+}
+span{
+    border: medium dotted darkcyan;
+}

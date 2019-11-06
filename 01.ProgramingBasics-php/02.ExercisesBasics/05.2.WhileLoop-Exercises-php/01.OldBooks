@@ -1,0 +1,23 @@
+<?php
+
+$book = readline();
+$capacity = intval(readline());
+$num = 0;
+$book2 = '';
+while($capacity > 0 && $book != $book2)
+{
+    $book2 = readline();
+    $num++;
+    $capacity--;
+    
+}
+if ($book === $book2)
+{
+    echo "You checked " . ($num - 1). " books and found it.";
+}
+else
+{
+    echo "The book you search is not here!" . PHP_EOL;
+    echo "You checked " . $num . " books.";
+    
+}

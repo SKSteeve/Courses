@@ -1,0 +1,39 @@
+<?php
+
+$neededMoney = floatval(readline());
+$ownedMoney = floatval(readline());
+
+$daysInRowSpend = 0;
+$daysCounter = 0;
+
+while($daysInRowSpend < 5 && $neededMoney > $ownedMoney)
+{
+    
+    $daysCounter++;
+    $spendOrSave = readline();
+    $sum = floatval(readline());
+    if ($spendOrSave == "spend")
+    {
+        $ownedMoney = $ownedMoney - $sum;
+        $daysInRowSpend++;
+        if ($sum > $ownedMoney)
+        {
+            $ownedMoney = 0;
+        }
+    }
+    else
+    {
+        $ownedMoney += $sum;
+        $daysInRowSpend = 0;
+    }
+}
+
+if ($daysInRowSpend == 5)
+{
+    echo "You can't save the money.".PHP_EOL;
+    echo $daysCounter;
+}
+else
+{
+    echo "You saved the money for " . $daysCounter . " days.";
+}

@@ -1,0 +1,30 @@
+<?php
+
+$num = intval(readline());
+
+$sum = 0;
+$prevSum = 0;
+$diff = 0;
+$maxDiff = 0;
+
+for($i = 1; $i <= $num; $i++)
+{
+    $sum = floatval(readline());
+    $sum = $sum + floatval(readline());
+    
+    $diff = abs($prevSum - $sum);
+    if($maxDiff < $diff && $i > 1)
+    {
+        $maxDiff = $diff;
+    }
+    $prevSum = $sum;
+    
+}
+if($maxDiff == 0)
+{
+    echo "Yes, value=" . $sum;
+}
+else
+{
+    echo "No, maxdiff=" . $maxDiff;
+}

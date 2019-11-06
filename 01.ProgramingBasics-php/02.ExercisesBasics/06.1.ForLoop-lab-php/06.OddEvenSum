@@ -1,0 +1,31 @@
+<?php
+
+$num = intval(readline());
+$counter = 0;
+$sumOdd = 0;
+$sumEven = 0;
+$diff = 0;
+
+for($i = 0; $i < $num; $i++)
+{
+    $counter++;
+    $random = floatval(readline());
+    
+    if($counter % 2 == 0)
+    {
+        $sumEven = $sumEven + $random;
+    }
+    else        //nechetni
+    {
+        $sumOdd = $sumOdd + $random;
+    }
+}
+$diff = abs($sumEven - $sumOdd);
+if($sumEven == $sumOdd)
+{
+   echo "Yes" . PHP_EOL . "Sum = $sumOdd"; 
+}
+else
+{
+    echo "No" . PHP_EOL . "Diff = $diff";
+}

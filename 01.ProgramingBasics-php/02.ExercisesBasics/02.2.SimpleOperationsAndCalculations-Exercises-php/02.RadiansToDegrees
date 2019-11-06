@@ -1,0 +1,9 @@
+<?php
+
+$radians = (float)readline();
+$inDegrees = $radians * 180 / pi();
+
+echo round($inDegrees , 2);
+
+//3.1416
+//0.7854

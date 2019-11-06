@@ -1,0 +1,39 @@
+<?php
+
+$budget = intval(readline());
+$articulsNum = intval(readline());
+$totalSum = 0;
+
+for($i = 1; $i <= $articulsNum; $i++)
+{
+    $articul = readline();
+    if($articul == "hoodie")
+    {
+        $totalSum += 30;
+    }
+    else if($articul == "keychain")
+    {
+        $totalSum += 4;
+    }
+    else if($articul == "T-shirt")
+    {
+        $totalSum += 20;
+    }
+    else if($articul == "flag")
+    {
+        $totalSum += 15;
+    }
+    else
+    {
+        $totalSum += 1;
+    }
+}
+
+if($budget >= $totalSum)
+{
+    echo "You bought $articulsNum items and left with " . ($budget - $totalSum) . " lv.";
+}
+else
+{
+    echo "Not enough money, you need " . ($totalSum - $budget) . " more lv.";
+}

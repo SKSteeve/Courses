@@ -1,0 +1,94 @@
+html {
+	font: 16px/1.5 Georgia, serif;
+}
+
+body {
+	background: rgb(238, 238, 238);
+}
+
+blockquote {
+	border-left: 1px solid #888;
+	padding-left: 1em;
+	font-family: Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+}
+
+blockquote p:last-child {
+	text-align: right;
+}
+
+img {
+	box-sizing: border-box;
+	border: 3px solid #000;
+	padding: 0.5em;
+	margin: 0.8em;
+	background: rgb(255, 255, 255);
+	box-shadow: 0 0 1rem 0.2em rgba(0, 0, 0, 0.25);
+}
+
+a {
+	color: rgb(0, 153, 0);
+}
+
+header {
+	flex-basis: 100%;
+}
+
+main {
+	flex: 2;
+}
+
+aside {
+	flex: 1;
+	padding-left: 2em;
+	margin-left: 2em;
+}
+
+.page {
+	width: 60em;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-title {
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 2px solid #000;
+	width: 100%;
+	padding-bottom: 0.5em;
+	font-size: 3em;
+}
+
+.site-heading1 img {
+	float: right;
+}
+
+.site-heading2 {
+	display: flex;
+}
+
+.site-heading2 p {
+	flex: 1;
+}
+
+.site-heading2 blockquote {
+	flex: 1;
+}
+
+.site-heading3 img {
+	float: left;
+}
+
+.cleaner {
+	clear: both;
+}

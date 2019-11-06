@@ -1,0 +1,17 @@
+<?php
+
+$n = intval(readline());
+$count = 0;
+for($red = 1; $red <= $n; $red++)
+{
+    for($curRed = 1; $curRed <= $red; $curRed++)
+    {
+        if($count >= $n)
+        {
+            return;
+        }
+        $count++;
+        echo $count . " ";
+    }
+    echo PHP_EOL;
+}

@@ -1,0 +1,50 @@
+<?php
+
+$number = intval(readline());
+
+if ($number == 1)
+{
+    echo "one";
+}
+else if ($number == 2)
+{
+    echo "two";
+}
+else if ($number == 3)
+{
+    echo "three";
+}
+else if ($number == 4)
+{
+    echo "four";
+}
+else if ($number == 5)
+{
+    echo "five";
+}
+else if ($number == 6)
+{
+    echo "six";
+}
+else if ($number == 7)
+{
+    echo "seven";
+}
+else if ($number == 8)
+{
+    echo "eight";
+}
+else if ($number == 9)
+{
+    echo "nine";
+}
+else 
+{
+    echo "number too big";
+}
+
+
+
+
+
+

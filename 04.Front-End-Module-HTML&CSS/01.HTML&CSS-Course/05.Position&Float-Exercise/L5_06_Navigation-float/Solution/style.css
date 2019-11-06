@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(233, 231, 231);
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+.header-nav {
+    float: right;
+    padding-top: 3em;
+}
+
+.header-nav li {
+    display: inline-block;
+    
+    
+}
+
+.header-nav li a {
+    text-decoration: none;
+    padding-right: 1em;
+    color: limegreen;
+    text-align: center;
+}
+
+main {
+    display: inline-block;
+    width: 65%;
+}
+
+aside {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5em;
+}
+
+h3 {
+    padding-top: 2em;
+}
+
+.aside {
+    padding-top: 1em;
+    padding-left: 2em;
+    text-decoration: none;
+    color: mediumseagreen;
+}
+
+.aside a {
+    text-decoration: none;
+    color: limegreen;
+
+}
+
+h1, h2 {
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+    font-size: 23px;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+blockquote {
+    width: 40%;
+    float: right;
+    border-left: 2px solid black;
+    padding-left: 2em;
+    font-style: italic;
+    color: rgba(123, 123, 116, 1);
+}
+blockquote p:last-child {
+    text-align: right;
+}
+
+.padding1 {
+    padding-right: 50%;
+}
+
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 1.5em 0em 0.5em 0em;
+    float: left;
+}
+
+
+.clear {
+   clear: both; 
+}
+
+.first-img {
+    float: right;
+    padding-left: 1.5em;    
+}
+div img 
+{
+    box-sizing: border-box;
+    width: 160px;
+    height: auto;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid black;
+    background-color: white;
+}
+.second-img {
+    float: left;
+    padding: 0 2em 0 0;
+}
+
+.second-img img {
+    width: 200px;
+    height: auto;
+}

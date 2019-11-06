@@ -1,0 +1,28 @@
+<?php
+
+
+$budget = floatval(readline());
+$statists = intval(readline());
+$priceDress = floatval(readline());
+$dekor = $budget * 0.10;
+
+$priceDressTotal = $priceDress * $statists;
+if ($statists > 150)
+{
+    $priceDressTotal -= $priceDressTotal * 0.10;
+}
+
+if ($dekor + $priceDressTotal > $budget)
+{
+    echo "Not enough money!" . PHP_EOL;
+    printf("Wingard needs %0.2f leva more." , $dekor + $priceDressTotal - $budget);
+}
+else
+{
+    echo "Action!".PHP_EOL;
+    printf("Wingard starts filming with %0.2f leva left." , $budget - ($dekor + $priceDressTotal));
+}
+
+
+
+

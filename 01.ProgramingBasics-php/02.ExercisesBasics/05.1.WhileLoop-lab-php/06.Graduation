@@ -1,0 +1,17 @@
+<?php
+
+$name = readline();
+$counter = 0;
+$sum = 0;
+while($counter < 12)
+{
+    $evaluation = floatval(readline());
+    if ($evaluation >= 4.00)
+    {
+    $sum += $evaluation;
+    $counter++;
+    }
+}
+$sum = $sum / 12;
+printf("$name graduated. Average grade: %0.2f", $sum);
+

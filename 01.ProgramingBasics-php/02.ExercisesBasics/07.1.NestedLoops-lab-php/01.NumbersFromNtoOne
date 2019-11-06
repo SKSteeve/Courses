@@ -1,0 +1,8 @@
+<?php
+
+$n = intval(readline());
+
+for($i = 1;$i <= $n;$n--)
+{
+    echo $n . PHP_EOL;
+}

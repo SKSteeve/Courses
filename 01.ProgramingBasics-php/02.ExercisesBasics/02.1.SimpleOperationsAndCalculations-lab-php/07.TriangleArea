@@ -1,0 +1,9 @@
+<?php
+
+$a = floatval(readline());
+$h = floatval(readline());
+
+$areaOfTriangle = $a * $h / 2;
+echo number_format($areaOfTriangle, 2) . PHP_EOL;
+echo round($areaOfTriangle, 2) . PHP_EOL;
+echo sprintf('%0.2f' ,$areaOfTriangle);

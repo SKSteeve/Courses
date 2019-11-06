@@ -1,0 +1,25 @@
+<?php
+
+$floorNum = intval(readline());
+$roomsOnFloor = intval(readline());
+
+for($floor = $floorNum; $floor > 0; $floor--)
+{
+    for($room = 0; $room < $roomsOnFloor; $room++)
+    {
+        if($floor == $floorNum)
+        {
+            echo "L$floor$room ";
+        }
+        else if($floor % 2 == 0)
+        {
+            echo "O$floor$room ";
+        }
+        else
+        {
+            echo "A$floor$room ";
+        }
+    }
+    echo PHP_EOL;
+}
+

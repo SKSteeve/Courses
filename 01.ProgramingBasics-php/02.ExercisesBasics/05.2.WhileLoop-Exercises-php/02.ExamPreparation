@@ -1,0 +1,33 @@
+<?php
+
+$badGrades = intval(readline());
+$yourLimit = $badGrades;
+$averageScore = 0;
+$numbRates = 0;
+$exerciseName = '';
+
+while($badGrades >= 1)
+{
+    $lastProblem = $exerciseName;
+    $exerciseName = readline();
+    $rate = intval(readline());
+    $averageScore += $rate;
+    if ($exerciseName == "Enough")
+    {
+        $averageScore = $averageScore / $numbRates;
+        echo "Average score: " .  number_format($averageScore , 2) . PHP_EOL;
+        echo "Number of problems: " . $numbRates . PHP_EOL;
+        echo "Last problem: " . $lastProblem;
+        break;
+    }
+    else if($rate <= 4.00)
+    {
+        $badGrades--;
+    }
+    $numbRates++;
+}
+if ($badGrades < 1)
+{
+    echo "You need a break, " . $yourLimit . " poor grades.";
+}
+

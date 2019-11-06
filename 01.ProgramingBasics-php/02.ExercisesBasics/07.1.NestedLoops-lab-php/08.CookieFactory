@@ -1,0 +1,37 @@
+<?php
+
+$partidi = intval(readline());
+$smes = '';
+$eggs = false;
+$sugar = false;
+$flour = false;
+
+for($i = 1; $i <= $partidi; $i++)
+{
+    while($smes != "Bake!")
+    {
+       $smes = readline();
+       if($smes == "eggs")
+       {
+           $eggs = true;
+       }
+       else if($smes == "sugar")
+       {
+           $sugar = true;
+       }
+       else if($smes == "flour")
+       {
+           $flour = true;
+       }
+    }
+    if($eggs == true && $sugar == true && $flour == true)
+    {
+        echo "Baking batch number $i..." . PHP_EOL;
+    }
+    else
+    {
+        echo "The batter should contain flour, eggs and sugar!" . PHP_EOL;
+        $i--;
+    }
+    $smes = '';
+}

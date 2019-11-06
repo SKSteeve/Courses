@@ -1,0 +1,15 @@
+<?php
+
+
+$a = intval(readline());
+$b = intval(readline());
+
+if ($a >= $b)
+{
+    echo "$a";
+}
+else
+{
+    echo "$b";
+}
+
