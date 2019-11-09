@@ -1,3 +1,3 @@
 # Courses
 
-You can find all the passed / ongoing curses here !
+You can find all the passed / ongoing courses here !
