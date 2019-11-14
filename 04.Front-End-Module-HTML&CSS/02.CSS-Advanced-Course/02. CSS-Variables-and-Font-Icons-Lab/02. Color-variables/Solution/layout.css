@@ -1,0 +1,34 @@
+.container {
+    width: 60em;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+    padding: 0em 3em;
+}
+
+.container ul li {
+    padding: 1em;
+}
+
+button {
+    border-radius: 10px;
+    background: var(--yellow-font-color);
+    color: var(--white-font-color);
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    padding: 8px;
+    width: 4em;
+    font-size: 14px;
+}
+
+button:hover {
+    background: var(--primary-font-color);
+    color: var(--yellow-font-color);
+}

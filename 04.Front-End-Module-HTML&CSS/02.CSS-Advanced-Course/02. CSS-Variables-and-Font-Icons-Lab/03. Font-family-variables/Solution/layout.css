@@ -1,0 +1,16 @@
+article {
+    width: 50em;
+    margin: 0 auto;
+}
+
+article header {
+    text-align: center;
+}
+
+p {
+    font-family: var(--font-family-content-text);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-family-headings);
+}
