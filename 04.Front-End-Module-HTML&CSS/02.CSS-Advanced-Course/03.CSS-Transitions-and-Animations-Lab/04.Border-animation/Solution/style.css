@@ -1,0 +1,42 @@
+html {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e5e5c4;
+}
+
+a {
+    outline: 5px solid darkblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: white;
+}
+
+a:first-child {
+    margin-right: 1em;
+}
+
+a:hover {
+    animation: borders-expand 1s forwards;
+}
+
+
+@keyframes borders-expand {
+    0% {
+
+    }
+    100% {
+        border: solid 10px darkblue;
+    }
+}
