@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+  
+.box {
+    animation: box 2s ease-in-out  1s infinite alternate none running;
+}
+  
+@keyframes box {
+
+    from {
+        width: 5rem;
+        height: 5rem;
+        background-color: red;
+        border-radius: 50%;
+    }
+    
+    to {
+        width: 10rem;
+        height: 10rem;
+        background-color: orange;
+        border-radius: 0;
+    }
+}
