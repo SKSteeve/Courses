@@ -12,31 +12,23 @@ body {
     background-color: #e7e5e5c4;
 }
 
-a {
-    outline: 5px solid darkblue;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    display: inline-block;
-    padding: 1em 2em;
-    background-color: white;
+.buttons {
+    display: flex;
 }
 
-a:first-child {
-    margin-right: 1em;
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    border: 3px solid #203f5d;
+    outline: 0 solid #203f5d;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    text-transform: uppercase;
+    transition: outline 0.3s linear;
 }
 
 a:hover {
-    animation: borders-expand 1s forwards;
-}
-
-
-@keyframes borders-expand {
-    0% {
-
-    }
-    100% {
-        border: solid 10px darkblue;
-    }
+    outline: 5px solid #203f5d;
 }
