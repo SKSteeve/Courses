@@ -1,0 +1,38 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+.site {
+    padding-top: 1em;
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+header {
+    grid-column: span 4;
+}
+
+main {
+    grid-column: span 3;
+}
+
+aside {
+    grid-column: span 1;
+}
+
+footer { 
+    grid-column: span 4;
+}
+
+header, main, aside, footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
