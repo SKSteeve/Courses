@@ -11,16 +11,16 @@ body {
     display: grid;
     width: 95%;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
 header {
-    grid-column: span 4;
+    grid-column: span 3;
 }
 
 main {
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 aside {
@@ -28,7 +28,7 @@ aside {
 }
 
 footer { 
-    grid-column: span 4;
+    grid-column: span 3;
 }
 
 header, main, aside, footer {
