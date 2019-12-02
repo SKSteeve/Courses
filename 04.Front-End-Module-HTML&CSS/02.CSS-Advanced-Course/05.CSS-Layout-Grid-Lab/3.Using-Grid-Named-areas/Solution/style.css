@@ -1,0 +1,38 @@
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+.site {
+    padding-top: 1em;
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer { 
+    grid-area: footer;
+}
+
+header, main, aside, footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
