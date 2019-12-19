@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35a676b1-a3c3-41d8-8476-fa01ec92f6eb" name="Default Changelist" comment="" />
+    <list default="true" id="35a676b1-a3c3-41d8-8476-fa01ec92f6eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/20.Associative_Arrays-Exercise-php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/20.Associative_Arrays-Exercise-php.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,11 +19,11 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/10.SoftUniExamResults.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="630">
               <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
             </state>
           </provider>
@@ -64,7 +69,21 @@
           <expand>
             <path>
               <item name="20.Associative_Arrays-Exercise-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="20.Associative_Arrays-Exercise-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="20.Associative_Arrays-Exercise-php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20.Associative_Arrays-Exercise-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="20.Associative_Arrays-Exercise-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="22.String-and-Text_Processing-Lab-php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -75,6 +94,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../22.String-and-Text_Processing-Lab-php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -129,17 +149,17 @@
       <updated>1570816376019</updated>
       <workItem from="1570816377250" duration="51724000" />
       <workItem from="1576765697263" duration="18000" />
+      <workItem from="1576767060988" duration="1068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51742000" />
+    <option name="totallyTimeSpent" value="52810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,7 +263,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/10.SoftUniExamResults.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="630">
           <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
