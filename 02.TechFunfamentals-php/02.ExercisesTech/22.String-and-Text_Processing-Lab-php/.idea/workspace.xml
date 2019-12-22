@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6b517c2-90ae-470e-b5b4-7113c0a6e3c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01.ConditionsTech/~$.1.PHP-Fundamentals-String_and_Text_Processing-Lab.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../01.ConditionsTech/~$.1.PHP-Fundamentals-String_and_Text_Processing-Lab.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.Substring.php" beforeDir="false" afterPath="$PROJECT_DIR$/01.Substring.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +18,12 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02.ReverseStrings.php">
+        <entry file="file://$PROJECT_DIR$/06.Palindromes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -37,6 +38,10 @@
       <list>
         <option value="$PROJECT_DIR$/01.Substring.php" />
         <option value="$PROJECT_DIR$/02.ReverseStrings.php" />
+        <option value="$PROJECT_DIR$/03.RepeatStrings.php" />
+        <option value="$PROJECT_DIR$/04.TextFilter.php" />
+        <option value="$PROJECT_DIR$/05.CountStringOccurrences.php" />
+        <option value="$PROJECT_DIR$/06.Palindromes.php" />
       </list>
     </option>
   </component>
@@ -60,6 +65,11 @@
           <expand>
             <path>
               <item name="22.String-and-Text_Processing-Lab-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="22.String-and-Text_Processing-Lab-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="22.String-and-Text_Processing-Lab-php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -72,6 +82,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../20.Associative_Arrays-Exercise-php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -88,17 +99,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.02.ReverseStrings.php">
-    <configuration name="01.Substring.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/01.Substring.php">
+  <component name="RunManager" selected="PHP Script.06.Palindromes.php">
+    <configuration name="02.ReverseStrings.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/02.ReverseStrings.php">
       <method v="2" />
     </configuration>
-    <configuration name="02.ReverseStrings.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/02.ReverseStrings.php">
+    <configuration name="03.RepeatStrings.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/03.RepeatStrings.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="04.TextFilter.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/04.TextFilter.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="05.CountStringOccurrences.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/05.CountStringOccurrences.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="06.Palindromes.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/06.Palindromes.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.06.Palindromes.php" />
+        <item itemvalue="PHP Script.05.CountStringOccurrences.php" />
+        <item itemvalue="PHP Script.04.TextFilter.php" />
+        <item itemvalue="PHP Script.03.RepeatStrings.php" />
         <item itemvalue="PHP Script.02.ReverseStrings.php" />
-        <item itemvalue="PHP Script.01.Substring.php" />
       </list>
     </recent_temporary>
   </component>
@@ -114,23 +137,24 @@
       <updated>1576767133801</updated>
       <workItem from="1576767135041" duration="277000" />
       <workItem from="1576768487028" duration="8000" />
-      <workItem from="1576959902627" duration="4998000" />
+      <workItem from="1576959902627" duration="5130000" />
+      <workItem from="1577019556399" duration="6912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5283000" />
+    <option name="totallyTimeSpent" value="12327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44026187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -159,8 +183,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02.ReverseStrings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="189">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03.RepeatStrings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04.TextFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05.CountStringOccurrences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06.Palindromes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
