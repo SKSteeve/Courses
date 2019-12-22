@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../20.Associative_Arrays-Exercise-php/.idea/20.Associative_Arrays-Exercise-php.iml" filepath="$PROJECT_DIR$/../20.Associative_Arrays-Exercise-php/.idea/20.Associative_Arrays-Exercise-php.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" filepath="$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/.idea/23.String-and-Text_Processing-Exercise-php.iml" filepath="$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/.idea/23.String-and-Text_Processing-Exercise-php.iml" />
     </modules>
   </component>
 </project>
