@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6b517c2-90ae-470e-b5b4-7113c0a6e3c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../01.ConditionsTech/~$.1.PHP-Fundamentals-String_and_Text_Processing-Lab.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/22.String-and-Text_Processing-Lab-php.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/01.ValidUsernames.php" beforeDir="false" afterPath="$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/01.ValidUsernames.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +16,12 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/01.ValidUsernames.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -42,6 +40,7 @@
         <option value="$PROJECT_DIR$/04.TextFilter.php" />
         <option value="$PROJECT_DIR$/05.CountStringOccurrences.php" />
         <option value="$PROJECT_DIR$/06.Palindromes.php" />
+        <option value="$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/01.ValidUsernames.php" />
       </list>
     </option>
   </component>
@@ -63,15 +62,6 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="22.String-and-Text_Processing-Lab-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="22.String-and-Text_Processing-Lab-php" type="b2602c69:ProjectViewProjectNode" />
-              <item name="22" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="22.String-and-Text_Processing-Lab-php" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="22.String-and-Text_Processing-Lab-php" type="b2602c69:ProjectViewProjectNode" />
               <item name="23" type="9c53a853:ProjectViewModuleGroupNode" />
@@ -148,17 +138,18 @@
       <workItem from="1576768487028" duration="8000" />
       <workItem from="1576959902627" duration="5130000" />
       <workItem from="1577019556399" duration="7153000" />
+      <workItem from="1577048094018" duration="825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12568000" />
+    <option name="totallyTimeSpent" value="13393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,8 +218,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../23.String-and-Text_Processing-Exercise-php/01.ValidUsernames.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
