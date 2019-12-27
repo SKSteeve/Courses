@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/25.Regular-Expressions-Regex-Lab-php.iml" filepath="$PROJECT_DIR$/.idea/25.Regular-Expressions-Regex-Lab-php.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../26.Regular-Expressions-Regex-Exercise-php/.idea/26.Regular-Expressions-Regex-Exercise-php.iml" filepath="$PROJECT_DIR$/../26.Regular-Expressions-Regex-Exercise-php/.idea/26.Regular-Expressions-Regex-Exercise-php.iml" />
     </modules>
   </component>
 </project>
