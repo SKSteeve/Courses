@@ -18,59 +18,92 @@ body, button, input, option, select, form {
     font: inherit;
 }
 
-
 header {
-    height: 4em;
     background-color: orangered;
+    height: 60px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
 }
 
 header ul {
+    flex: 1 1 50%;
     display: flex;
     list-style: none;
-    margin: 0 0 0 2em;
-    width: 100%;
+    align-items: center;
 }
 
-header li {
-    padding-right: 1em;
+header ul li {
+    padding-left: 3em;
 }
 
-header li:nth-child(5) {
-    margin-right: 7em;
+header ul li a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
 }
 
-header li:last-child {
-    float: right;
+header .search-bar-acc {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.search-bar {
-    margin-right: 25em;
+header .search-bar-acc form {
+    display: flex;
+
 }
 
-header {
-    margin-bottom: 2em;
+header .search-bar-acc form input {
+    width: 350px;
+    height: 30px;
+    border: 0;
+}
+
+header .search-bar-acc form button {
+    background-color: #CCC;
+    border: 0;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+header .search-bar-acc form i {
+    color: white;
+    font-size: 14px;
+}
+
+header .search-bar-acc i {
+    margin-right: 0.5em;
+}
+
+header .search-bar-acc a {
+    margin-right: 3em;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
 }
 
 main {
-    max-width: 70em;
-    margin: 0 auto;
+    padding: 2em 5em;
 }
 
-.rooms {
+main .rooms {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 
-.rooms img {
-    width: 23%;
-    height: 300px;
+main .rooms .r {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-main span {
-    padding-right: 12em;
+main .rooms .r img {
+    height: 250px;
+    width: 200px;
+    flex: 1 1 100%;
+}
+
+main .rooms .r span {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5em;
 }
