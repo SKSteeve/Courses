@@ -18,6 +18,10 @@ body, button, input, option, select, form {
     font: inherit;
 }
 
+.container {
+    background-color: rgb(240, 240, 240);
+}
+
 header {
     background-color: orangered;
     height: 60px;
@@ -106,4 +110,137 @@ main .rooms .r span {
     width: 100%;
     text-align: center;
     padding-top: 0.5em;
+}
+
+.fall-collection {
+    margin: 2em 0;
+}
+
+.fall-collection img{
+    width: 780px;
+    height: 400px;
+    float: right;
+}
+
+.fall-collection .info {
+    padding-top: 4em;
+}
+
+.fall-collection .info h1 {
+    color: orangered;
+}
+
+.fall-collection .info p {
+    padding: 1em 0;
+    color: rgb(138, 135, 135);
+}
+
+.fall-collection .info button {
+    background-color: orangered;
+    border: none;
+    padding: 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fall-collection .info button a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 14px;
+}
+
+.fall-collection .clear {
+    clear: right;
+}
+
+.services-info {
+    background-color: #CCC;
+    height: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-info p {
+    color: rgb(138, 135, 135);
+}
+
+.services-info h3 {
+    color: rgb(94, 89, 89);
+}
+
+.services-info .shipping {
+    text-align: center;
+}
+
+.services-info .shipping img {
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+
+.services-info .deals {
+    text-align: center;
+}
+
+.services-info .deals img {
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+
+.services-info .service {
+    text-align: center;
+}
+
+.services-info .service img {
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6em 4em 6em;
+    color: rgb(138, 135, 135);
+    
+}
+
+footer .some-links a {
+    padding-right: 1em;
+    text-decoration: none;
+    color: rgb(138, 135, 135);
+}
+
+footer .some-links a:nth-child(1),
+footer .more-contacts a:nth-child(1) {
+    font-weight: bold;
+}
+
+footer .more-contacts a {
+    text-decoration: none;
+    color: rgb(138, 135, 135);
+    padding-right: 1.5em;
+}
+
+footer .more-contacts a:nth-child(2) {
+    padding: 0.5em 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #CCC;
+    margin-right: 1em;
+}
+
+footer .more-contacts span {
+    font-size: 12px;
+    margin-right: 1em;
+}
+
+footer .more-contacts i {
+    font-size: 25px;
+    padding-right: 0.3em;
 }
