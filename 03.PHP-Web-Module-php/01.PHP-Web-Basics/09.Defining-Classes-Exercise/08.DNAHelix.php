@@ -1,0 +1,3 @@
+<?php
+
+$input = intval(readline());
