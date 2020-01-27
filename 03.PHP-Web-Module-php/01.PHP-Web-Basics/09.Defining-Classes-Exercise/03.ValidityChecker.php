@@ -26,10 +26,10 @@ function printMessage($x1, $y1, $x2, $y2)
 {
     if (isDistanceValid($x1, $y1, $x2, $y2))
     {
-        echo "{{$x1}}, {{$y1}} to {{$x2}}, {{$y2}} is valid\n";
+        echo '{' . $x1 . ', ' . $y1 . '}' . " to " . '{' . $x2 . ', ' . $y2 . '}' . " is valid\n";
     }
     else
     {
-        echo "{{$x1}}, {{$y1}} to {{$x2}}, {{$y2}} is invalid\n";
+       echo '{' . $x1 . ', ' . $y1 . '}' . " to " . '{' . $x2 . ', ' . $y2 . '}' . " is invalid\n";
     }
 }
