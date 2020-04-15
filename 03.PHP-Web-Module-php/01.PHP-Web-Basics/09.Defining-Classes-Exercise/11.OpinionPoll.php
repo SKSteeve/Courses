@@ -51,7 +51,7 @@ function checkAge ($age){
     return $age > 30;
 }
 
-usort($persons, function ($a, $b)
+usort($persons, function (Person $a,Person $b)
 {
     return strcmp($a->getName(), $b->getName());
 });
