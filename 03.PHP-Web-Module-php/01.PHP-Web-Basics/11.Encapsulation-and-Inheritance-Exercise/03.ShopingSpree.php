@@ -1,236 +1,236 @@
 <?php
-class Shop{
-    /**
-     * Person
-     */
-    private $person;
-    private $bag = [];
 
-    function __construct(Person $person)
+class Person
+{
+    /**
+     * @var string
+     */
+    private $name;
+
+    /**
+     * @var float
+     */
+    private $money;
+
+    /**
+     * @var Product[]
+     */
+    private $bagOfProducts;
+
+    /**
+     * Person constructor.
+     * @param string $name
+     * @param float $money
+     * @throws Exception
+     */
+    public function __construct(string $name, float $money)
     {
-        $this->person= $person;
+        $this->setName($name);
+        $this->setMoney($money);
+        $this->bagOfProducts = [];
+    }
+
+    /**
+     * @param string $name
+     * @throws Exception
+     */
+    private function setName(string $name): void
+    {
+        if(empty($name)) {
+            throw new Exception("Name cannot be empty");
+        }
+        $this->name = $name;
+    }
+
+    /**
+     * @param float $money
+     * @throws Exception
+     */
+    private function setMoney(float $money): void
+    {
+        if($money < 0) {
+            throw new Exception("Money cannot be negative");
+        }
+
+        $this->money = $money;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return float
+     */
+    public function getMoney(): float
+    {
+        return $this->money;
+    }
+
+    /**
+     * @param Product $product
+     */
+    private function addProduct(Product $product): void
+    {
+        $this->bagOfProducts[] = $product;
+    }
+
+    /**
+     * @return array
+     */
+    public function getBagOfProducts(): array
+    {
+        return $this->bagOfProducts;
     }
 
     /**
      * @param Product $product
      * @throws Exception
      */
-    function setBag(Product $product){
-        if ($this->person->getMoney() < $product->getCost()) {
-            throw new Exception($this->person->getName(). ' can\'t afford ' . $product->getName() . PHP_EOL);
+    public function buy(Product $product)
+    {
+        if($this->getMoney() >= $product->getCost()) {
+            $result = $this->getMoney() - $product->getCost();
+            $this->setMoney($result);
+            $this->addProduct($product);
+            echo "{$this->getName()} bought {$product->getName()}\n";
+        } else {
+            throw new Exception("{$this->getName()} can't afford {$product->getName()}\n");
         }
-        $this->bag[] = $product;
-        $this->person->bay($product->getCost());
-        echo $this->person->getName() . ' bought ' . $product->getName().PHP_EOL;
     }
-
-    public function getPerson()
-    {
-        return $this->person;
-    }
-
-    public function getBag(): array
-    {
-        return $this->bag;
-    }
-
-
-
 }
 
 class Product
 {
-    const WORD_LENGHT = 0;
+    /**
+     * @var string
+     */
     private $name;
+
+    /**
+     * @var float
+     */
     private $cost;
 
     /**
      * Product constructor.
-     * @param $name
-     * @param $cost
+     * @param string $name
+     * @param float $cost
      * @throws Exception
      */
-    function __construct($name, $cost)
+    public function __construct(string $name, float $cost)
     {
         $this->setName($name);
         $this->setCost($cost);
     }
 
     /**
-     * @param $name
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
      * @throws Exception
      */
-    public function setName($name)
+    private function setName(string $name): void
     {
-        if($name == '') {
-            throw new Exception('Name cannot be empty');
+        if(empty($name)) {
+            throw new Exception("Name cannot be empty");
         }
         $this->name = $name;
     }
 
     /**
-     * @param $cost
-     * @throws Exception
+     * @return float
      */
-    public function setCost($cost)
-    {
-        if ($cost < self::WORD_LENGHT){
-            throw new Exception("Money cannot be negative");
-        }
-        $this->cost = $cost;
-    }
-
-
-    public function getCost()
+    public function getCost(): float
     {
         return $this->cost;
     }
 
-
-    public function getName()
-    {
-        return $this->name;
-    }
-}
-
-class Person
-{
-    const Width = 0;
-    private $name;
-    private $money;
-
     /**
-     * Person constructor.
-     * @param $name
-     * @param $money
-     * @throws Exception
+     * @param float $cost
      */
-    function __construct($name, $money)
+    private function setCost(float $cost): void
     {
-        $this->setName($name);
-        $this->setMoney($money);
-    }
-
-    /**
-     * @param $name
-     * @throws Exception
-     */
-    function setName($name){
-        if($name == '') {
-            throw  new Exception('Name cannot be empty');
-        }
-        $this->name = $name;
-    }
-
-    /**
-     * @param $money
-     * @throws Exception
-     */
-    function setMoney($money) {
-        if ($money  < self::Width){
-            throw new Exception('Money cannot be negative');
-        }
-        $this->money = $money;
-    }
-
-    function bay($money) {
-        $this->money -= $money;
-    }
-
-
-    public function getMoney()
-    {
-        return $this->money;
-    }
-
-    public function getName()
-    {
-        return $this->name;
+        $this->cost = $cost;
     }
 
 
 }
 
-$inputPeople = array_map('trim', explode(';', fgets(STDIN)));
-$inputProducts = array_map('trim', explode(';', fgets(STDIN)));
+$personsData = preg_split("/[=;]/", readline(), -1);
+$personsData = array_filter($personsData, function (string $el) {
+    return $el !== '';
+});
 
 $people = [];
-$shops = [];
-
-for ($i = 0; $i < count($inputPeople) - 1; $i++) {
-    if (strstr($inputPeople[$i], '=')) {
-        $personInfo = array_map('trim', explode('=', $inputPeople[$i]));
-        try {
-            $person = new Person($personInfo[0], $personInfo[1]);
-            $people[$personInfo[0]] = $person;
-            $shops[$personInfo[0]] = new Shop ($person);
-        }catch (Exception $e){
-            echo $e->getMessage();
-            exit;
-        }
-    } else {
-        echo 'Name cannot be empty';
-        exit;
-    }
-}
-
-$products = [];
-for ($i = 0; $i < count($inputProducts) - 1; $i++) {
-    if (strstr($inputProducts[$i], '=')) {
-        $productInfo = array_map('trim', explode('=', $inputProducts[$i]));
-        try {
-            $product = new Product($productInfo[0], $productInfo[1]);
-            $products[$productInfo[0]] = $product;
-        } catch (Exception $e){
-            echo $e->getMessage();
-            exit;
-        }
-    } else {
-        echo 'Name cannot be empty';
-    }
-}
-
-
-
-while(true){
-    $input = array_map('trim', explode(' ', fgets(STDIN)));
-    if($input[0]=="END") {
-        break;
-    }
+for($i = 0; $i < count($personsData) - 1; $i+=2) {
+    $personName = $personsData[$i];
+    $personMoney = $personsData[$i + 1];
 
     try {
-        $name = $input[0];
-        $product = $input[1];
-        if (!array_key_exists($name, $shops)) {
-            $shop = new Shop($people[$name], $products[$product]);
-            $shops[$name] = $shop;
-            $shops[$name]->setBag($products[$product]);
-        } else {
-            $shops[$name]->setBag($products[$product]);
-        }
-    } catch (Exception $e){
+        $people[$personName] = new Person($personName, $personMoney);
+    } catch (Exception $e) {
         echo $e->getMessage();
+        die();
     }
 }
-if (count($shops) == 0) {
-    foreach ($people as $person) {
-        echo $person->getName() . ' - Nothing bought'. PHP_EOL;
-    }
 
 
+$productsData = preg_split("/[=;]/", readline(), -1);
+$personsData = array_filter($personsData, function (string $el) {
+    return $el !== '';
+});
+
+$products = [];
+for($i = 0; $i < count($productsData) - 1; $i+=2) {
+    $productName = $productsData[$i];
+    $productCost = $productsData[$i+1];
+
+    $products[$productName] = new Product($productName, $productCost);
 }
-foreach ($shops as $shop) {
-    echo $shop->getPerson()->getName() . ' - ';
-    $count = count($shop->getBag());
-    if ($count==0) {
-        echo 'Nothing bought'. PHP_EOL;
-    } else {
-        for ($i = 0; $i < count($shop->getBag()); $i++) {
-            if ($i == count($shop->getBag()) - 1) {
-                echo $shop->getBag()[$i]->getName() . PHP_EOL;
-            } else {
-                echo $shop->getBag()[$i]->getName() . ',';
-            }
+
+$input = readline();
+while($input !== 'END') {
+
+    $data = explode(' ', $input);
+    list($personName, $productName) = $data;
+
+    if(array_key_exists($personName, $people) && array_key_exists($productName, $products)) {
+        try {
+            /** @var Person $person */
+            $person = $people[$personName];
+            $person->buy($products[$productName]);
+        } catch (Exception $ex) {
+            echo $ex->getMessage();
         }
     }
+    $input = readline();
+}
+
+/** @var Person $person $person */
+foreach ($people as $person) {
+    echo "{$person->getName()} - ";
+    if(count($person->getBagOfProducts()) == 0) {
+        echo $person->getName() . "Nothing bought\n";
+        continue;
+    }
+
+    $prodNames = '';
+    /** @var Product $product $product */
+    foreach ($person->getBagOfProducts() as $product) {
+        $prodNames .= $product->getName() . ',';
+    }
+
+    echo substr($prodNames, 0, strrpos($prodNames, ','));
+    echo PHP_EOL;
 }
