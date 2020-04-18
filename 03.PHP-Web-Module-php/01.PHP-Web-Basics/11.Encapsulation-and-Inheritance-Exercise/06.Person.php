@@ -1,6 +1,6 @@
 <?php
 
-abstract class Person
+class Person
 {
     /**
      * @var string
@@ -10,7 +10,7 @@ abstract class Person
     /**
      * @var int
      */
-    private $age;
+    protected $age;
 
     /**
      * Person constructor.
@@ -34,9 +34,13 @@ abstract class Person
 
     /**
      * @param string $name
+     * @throws Exception
      */
-    private function setName(string $name): void
+    protected function setName(string $name): void
     {
+        if(strlen($name) < 3){
+            throw new Exception("Name's length should not be less then 3 symbols!");
+        }
         $this->name = $name;
     }
 
@@ -52,10 +56,9 @@ abstract class Person
      * @param int $age
      * @throws Exception
      */
-    private function setAge(int $age): void
+    protected function setAge(int $age): void
     {
-        if($age < 1)
-        {
+        if($age < 1) {
             throw new Exception("Age must be positive!");
         }
         $this->age = $age;
@@ -64,7 +67,23 @@ abstract class Person
 
 class Child extends Person
 {
+    public function __construct(string $name, int $age)
+    {
+        parent::__construct($name, $age);
+    }
 
+    protected function setAge(int $age): void
+    {
+        if($age > 15) {
+            throw new Exception("Child's age must be less then 16!");
+        }
+        $this->age = $age;
+    }
 }
 
-$a = new Person();
+try {
+    $person = new Person('gosho', 0);
+    print_r($person);
+} catch (Exception $ex) {
+    echo $ex->getMessage();
+}
