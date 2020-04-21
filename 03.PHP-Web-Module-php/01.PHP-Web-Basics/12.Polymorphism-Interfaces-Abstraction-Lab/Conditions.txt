@@ -1,3 +1,0 @@
-**You can find the condition for every exercise in the url below**
-
-https://softuni.bg/trainings/resources/officedocument/40767/polymorphism-interfaces-and-abstraction-lab-php-web-basics-may-2019/2374
