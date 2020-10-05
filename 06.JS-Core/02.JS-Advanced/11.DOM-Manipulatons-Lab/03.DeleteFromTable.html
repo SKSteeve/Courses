@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DeleteFromTable</title>
+</head>
+<body>
+
+<table border="1" id="customers">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>eve@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Nick</td>
+        <td>nick@yahooo.com</td>
+    </tr>
+    <tr>
+        <td>Didi</td>
+        <td>didi@didi.net</td>
+    </tr>
+    <tr>
+        <td>Tedy</td>
+        <td>tedy@tedy.com</td>
+    </tr>
+</table>
+Email: <input type="text" name="email" />
+<button onclick="deleteByEmail()">Delete</button>
+<div id="result" ></div>
+</body>
+<script>
+    function deleteByEmail() {
+        let searchFor = document.querySelector("input").value;
+        let array = document.querySelectorAll("tr td:nth-child(2)");
+        let matchFound = false;
+        for(let i = 0; i < array.length; i++) {
+            if(array[i].textContent === searchFor) {
+                array[i].parentElement.remove();
+                matchFound = true;
+            }
+        }
+
+        let result = document.getElementById("result");
+        if (!matchFound) {
+            result.textContent = "Not found";
+        } else {
+            result.textContent = '';
+        }
+    }
+</script>
+</html>
