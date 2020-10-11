@@ -1,0 +1,2 @@
+Guide: Firebase/Kinvey/Postman - https://softuni.bg/trainings/resources/officedocument/38794/guide-firebase-kinvey-postman-js-applications-march-2019/2249
+Lab - https://softuni.bg/trainings/resources/officedocument/38793/lab-problem-descriptionos-js-applications-march-2019/2249
